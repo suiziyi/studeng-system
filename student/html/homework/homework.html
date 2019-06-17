@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>作业</title>
+
+        <link rel="stylesheet" href="../../css/zTreeStyle.css" type="text/css">
+         <link rel="stylesheet" href="../../css/browseanno.css" />
+
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+         <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+        <link rel="stylesheet" href="../../css/1_1login.css">
+        <script src="../../js/session.js"></script>
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="../../js/testHomework.js"></script>
+        <style>
+
+            .left-mn {
+                float: left;
+                width: 100%;
+            }
+
+            .left-mnc {
+                margin-right: 270px;
+                zoom: 0;
+                border-style: none;
+            }
+
+            .prog{
+                height: 50px;
+                padding: 25px 20px 0 20px;
+                background: #FFFFFF;
+                margin-bottom: 10px;
+                margin-top: 15px;
+                margin-left:-20px;
+                outline: none;
+            }
+
+            .prog .cnt {
+                float: left;
+                max-width: 500px;
+                height: 40px;
+            }
+
+            .cnt h3{
+                font-size: 4px;
+            }
+            .tit {
+                font-size: 19px;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 32%;
+            }
+            .navbar-header.a{
+                color: #101010;
+            }
+            .btn_default{
+                background-image: linear-gradient(#8FC200, #84B700);
+                color: white;
+                border-color: #719F00;
+                padding: 4px 9px;
+                font-size: 14px;
+                line-height: 28px;
+                border: 1px solid;
+            }
+            #test ,#title ,#homework{
+                width:100%;
+                height:400px;
+                margin-top:10px;
+                list-style:none;
+                background-color:#F8F8F8;
+                display: none;
+            }
+
+
+            #title li ,#test li ,#homework li{
+                height:50px;
+                line-height:50px;
+                border-bottom:1px solid #eeee;
+                padding-left:30px;
+            }
+            #title li a:hover ,#test li a:hover ,#homework li a:hover{
+                text-decoration:none;
+
+            }
+            .btn_default:hover{
+                text-decoration: none;
+            }
+            .btn_default:after{
+                text-decoration: none;
+            }
+
+
+        </style>
+    </head>
+    <body>
+    <div class="left-mn">
+        <div class="left-mnc">
+            <div class="prog">
+                <div>
+                    <div class="cnt">
+
+                        <h2 style="color: red;font-size: 25px;"><b>测验与作业</b></h2>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <hr style="margin-bottom:30px;" />
+        <div class="div_test_homework">
+            <!--<div id="div_title" onclick="title_toggle()" style="background-color:#eaeaea;">-->
+                <!--<h3 style="color: #1B1B1B;font-size: 15px;padding: 10px;"><i class="fa fa-caret-right"></i>&nbsp;&nbsp;第一章&nbsp;&nbsp;</h3>-->
+            <!--</div>-->
+            <!--<div id="title">-->
+                <!--<div class="div_homework" >-->
+                    <!--<ul>-->
+                        <!--<li  style="margin-left: -20px;color:#719F00;">本章作业</li>-->
+                        <!--<li>截止日期：<label>2019-05-08</label></li>-->
+                        <!--<li><a class="btn_default" href=test.html>进入作业</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+                <!--<div class="div_test">-->
+                    <!--<ul>-->
+                        <!--<li style="margin-left: -20px;color:#719F00;">本章测验</li>-->
+                        <!--<li>截止日期：<label>2019-05-08</label></li>-->
+                        <!--<li>限定时间：<label>90</label>分钟</li>-->
+                        <!--<li>剩余测验次数：<label>1</label></li>-->
+                        <!--<li><a class="btn_default" href=test.html>进入测验</a></li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<hr style="margin-bottom: 20px ; margin-top:50px;"/>-->
+        </div>
+
+    </div>
+    <div class="div_hidden">
+        <input type="hidden" name="teachingClassId" value=""/>
+        <input type="hidden" name="chaId" value=""/>
+        <input type="hidden" name="chaName" value=""/>
+    </div>
+    <!--<script type="text/javascript">-->
+        <!--function title_toggle(){-->
+            <!--$('#title').toggle();-->
+        <!--}-->
+
+        <!--// $(function(){-->
+        <!--//-->
+        <!--//     $("#div_title").click(function() {-->
+        <!--//         $(this).find("i").toggleClass("fa-caret-right").toggleClass("fa-caret-down");-->
+        <!--//     });-->
+        <!--//     $(".title1 .title2 .title3", parent.document).hide();-->
+        <!--// });-->
+
+    <!--</script>-->
+
+
+    </body>
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>期中试卷</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.bootcss.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="http://www.zhangxinxu.com/study/js/zxx.drag.1.0.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../../css/browseanno.css" />
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+    <link rel="stylesheet" href="../../css/1_1login.css">
+    <script src="../../js/drag.1.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../../js/session.js"></script>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+    <script src="../../js/endexamination.js"></script>
+    <style>
+        .left-mn {
+            float: left;
+            width: 100%;
+        }
+
+        .left-mnc {
+            margin-right: 270px;
+            zoom: 0;
+            border-style: none;
+        }
+
+        .prog{
+            height: 50px;
+            padding: 25px 20px 0 20px;
+            background: #FFFFFF;
+            /* margin-bottom: 10px; */
+            margin-top: 15px;
+            margin-left:-20px;
+            outline: none;
+        }
+
+        .prog .cnt {
+            float: left;
+            max-width: 500px;
+            height: 40px;
+        }
+        .tit {
+            font-size: 19px;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 32%;
+        }
+        .navbar-header.a{
+            color: #101010;
+        }
+        .btn_default{
+            display: inline-block;
+            padding: 4px 9px;
+            font-size: 14px;
+            line-height: 28px;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            margin-top: 20px;
+            margin-left:20px;
+            border: 1px solid #999;
+            border-radius: 4px;
+            background-image: linear-gradient(#AAD215, #A2C917);
+        }
+        .btn_reset{
+            float:right;
+            margin-top: 5px;
+            margin-right:316px;
+        }
+        .btn_reset .btn_submit, .btn_res{
+            display: inline-block;
+            padding: 2px 9px;
+            font-size: 14px;
+            line-height: 28px;
+
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #999;
+            border-radius: 4px;
+        }
+        .btn_reset .btn_res{
+            background-image: linear-gradient(#A6a6a6, #999);
+
+        }
+        .btn_reset .btn_submit{
+            background-image: linear-gradient(#AAD215, #A2C917);
+            margin-right:15px;
+        }
+        .btn_return{
+            padding: 1px 9px;
+            font-size: 14px;
+            line-height: 28px;
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            border: 1px solid #999;
+            border-radius: 4px;
+            background-image: linear-gradient(#AAD215, #A2C917);
+            float: right;
+        }
+
+        .exe_order{
+            width: 38px;
+            font-size: 18px;
+            color: #333;
+            display: inline;
+
+        }
+        .exe_type{
+            font-size: 12px;
+            background: #E3F8FF;
+            border: 1px solid #BFDFFF;
+            border-radius: 2px;
+            padding: 2px 4px;
+            margin-right: 5px;
+            margin-left: 20px;
+            color: #666;
+            line-height: 24px;
+        }
+        .score{
+            font-size: 14px;
+            margin-right: 10px;
+            margin-left: 10px;
+            color: #666;
+        }
+        .exe_content{
+            font-size: 14px;
+            line-height: 26px;
+            margin-top:15px;
+        }
+        .xuan li{
+            list-style: none;
+
+        }
+        .input_radio{
+            width: 16px;
+            height: 16px;
+            vertical-align:text-bottom;
+            margin-left:-30px;
+        }
+        .order{
+            width: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #666;
+            line-height: 24px;
+
+        }
+        .inline{
+            display: inline;
+        }
+
+        textarea{
+            width: 360px;
+            height: 30px;
+            color: black;
+            font-size: 13px;
+            background: #fafafa;;
+            border: gray solid 1px;
+            margin: 10px 20px;
+            overflow-y: visible;
+            padding-left:10px;
+            padding-top:5px;
+        }
+        .icon {
+            font-size: 20px;
+        }
+        .btn_orange{
+            width: 180px;
+            height: 30px;
+            color: white;
+            text-align: center;
+            vertical-align:middle;
+            border: 1px solid #999;
+            border-radius: 4px;
+            background-image: linear-gradient(#FF7E00, #FF6C00);
+            float: right;
+            position: fixed;
+            top:150px;
+            right:110px;
+
+        }
+        .clear{
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+
+<div class="left-mn">
+    <div class="left-mnc">
+        <div class="prog">
+            <div>
+                <h2 style="color:red;font-size: 25px;display: inline;"><b>
+                    期末试卷</b>
+                </h2>
+
+            </div>
+            <div class="btn_orange" id="box">
+                <span class="icon ion-ios-alarm-outline">&nbsp;倒计时:&nbsp</span>
+                <span id="timer" style="font-size: 20px;">
+
+                                            </span>
+            </div>
+
+        </div>
+
+    </div>
+    <hr style="margin-bottom:5px;float: left;width:70%;">
+    <div class="clear">
+
+    </div>
+    <div class="div_select">
+        <!--<div>-->
+        <!--<label class="exe_order">1</label>-->
+
+        <!--<label class="exe_content">&nbsp;设有int x=11;表达式(x++)的值是</label>-->
+        <!--<label class="score">(<span>3</span>分)</label>-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<input type="radio" name="radio_input" value="1" class="input_radio"/>-->
+        <!--<label class="order">A.</label>-->
+        <!--<label>11</label>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<input type="radio" name="radio_input" value="2" class="input_radio"/>-->
+        <!--<label class="order">B.</label>-->
+        <!--<label>12</label>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<input type="radio" name="radio_input" value="3" class="input_radio"/>-->
+        <!--<label class="order">C.</label>-->
+        <!--<label>10</label>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<input type="radio" name="radio_input" value="4" class="input_radio"/>-->
+        <!--<label class="order">D.</label>-->
+        <!--<label>13</label>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+
+        <!--<div>-->
+        <!--<label class="exe_order">2</label>-->
+
+        <!--<label class="exe_content">&nbsp;下面正确的是</label>-->
+        <!--<label class="score">(<span>3</span>分)</label>-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<input type="checkbox" name="checkbox_input" value="1" class="input_radio"/>-->
+        <!--<label class="order">A.</label>-->
+        <!--<label>1++的结果是1</label>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<input type="checkbox" name="checkbox_input" value="2" class="input_radio"/>-->
+        <!--<label class="order">B.</label>-->
+        <!--<label>++1的结果是2</label>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<input type="checkbox" name="checkbox_input" value="3" class="input_radio"/>-->
+        <!--<label class="order">C.</label>-->
+        <!--<label>&#45;&#45;1的结果是0</label>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<input type="checkbox" name="checkbox_input" value="4" class="input_radio"/>-->
+        <!--<label class="order">D.</label>-->
+        <!--<label>&#45;&#45;1的结果是1</label>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+    </div>
+    <div class="div_blank">
+        <!--<div>-->
+        <!--<label class="exe_order">3</label>-->
+
+        <!--<label class="exe_content">&nbsp;int x=10;x&#45;&#45;的结果是9</label>-->
+        <!--<label class="score">(<span>3</span>分)</label>-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<input type="radio" name="radio_input2" value="1" class="input_radio"/>-->
+        <!--<label class="order">A.</label>-->
+        <!--<label >正确</label>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<input type="radio" name="radio_input2" value="2" class="input_radio"/>-->
+        <!--<label class="order">B.</label>-->
+        <!--<label>错误</label>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+
+        <!--<div>-->
+        <!--<label class="exe_order">4</label>-->
+
+        <!--<label class="exe_content">&nbsp;int x=6;6*x的结果是</label>-->
+        <!--<label class="score">(<span>3</span>分)</label>-->
+        <!--</div>-->
+        <!--<div>-->
+        <!--<textarea placeholder="您还没有填写答案" style="resize:none;"></textarea>-->
+        <!--</div>-->
+    </div>
+
+    <div class="div_program">
+        <!--<div class="div_title">-->
+        <!--<div>-->
+        <!--<label class="exe_order">5</label>-->
+        <!--<label class="exe_content">&nbsp;编程部分</label>-->
+        <!--<label class="score">(<span>3</span>分)</label>-->
+
+        <!--</div>-->
+        <!--<div>-->
+        <!--<strong style="font-size: 12px;">(1)&nbsp;题目内容:</strong>-->
+        <!--<p style="margin-left: 20px;font-size: 12px;margin-top: 4px;">输出hello world</p>-->
+        <!--</div>-->
+
+
+        <!--<div style="margin-top: 15px">-->
+        <!--<strong style="margin-left: 20px;font-size: 12px;">输出样例:</strong>-->
+        <!--<p style="margin-left: 20px;font-size: 12px;margin-top: 4px;color: #666;">hello world</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="div_edit">-->
+        <!--<pre id="code" class="ace_editor" style="width:722px;height:400px;margin-left:20px;margin-top:25px;">-->
+        <!--<textarea class="ace_text-input">-->
+        <!--</textarea></pre>-->
+        <!--</div>-->
+
+        <!--<div calss="div_time">-->
+        <!--<strong style="margin-left: 20px;font-size: 12px;">时间限制:</strong>-->
+        <!--<label style="margin-left: 5px;font-size: 12px;color: #666;">1s</label>-->
+        <!--<strong style="margin-left: 20px;font-size: 12px;">内存限制:</strong>-->
+        <!--<label style="margin-left: 5px;font-size: 12px;color: #666;">32768k</label>-->
+        <!--<div class="btn_reset">-->
+        <!--<button class="btn_submit" type="submit">提交运行</button>-->
+        <!--<button class="btn_res" type="submit">初始代码</button>-->
+        <!--</div>-->
+
+        <!--</div>-->
+        <!--<div class="div_return" style="margin-top: 40px">-->
+        <!--<strong style="margin-left: 20px;font-size: 12px;">代码反馈:</strong>-->
+        <!--<p style="margin-left: 20px;font-size: 12px;margin-top: 4px;color: #666;">回答正确</p>-->
+        <!--</div>-->
+    </div>
+
+    <!--<button class="btn_default">提交答案</button>-->
+    <div class="div_button"></div>
+    <div class="input_hidden">
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    scrollFixed()
+    $(parent.window).resize(function() {
+        scrollFixed()
+    })
+    function scrollFixed (){
+        $(".btn_orange").css({
+            top : $(parent.window).scrollTop(),
+            marginTop: $(window.parent).height()-570
+        });
+        $(parent.window).scroll(function() {
+            $(".btn_orange").css({
+                top : $(parent.window).scrollTop(),
+                marginTop: $(window.parent).height()-570
+
+            });
+        });
+    }
+    $(function(){
+
+        $(".title1 .title2 .title3", parent.document).hide();
+    });
+
+</script>
+</body>
+</html>

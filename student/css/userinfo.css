@@ -1,0 +1,65 @@
+/*
+* @Author: name
+* @Date:   2019-02-20 18:19:06
+* @Last Modified by:   name
+* @Last Modified time: 2019-02-20 18:41:26
+*/
+.headwrap {
+    height: 190px;
+    width: 100%;
+    background: url(../img/head1.png);
+    position: relative;
+    background-size: auto 190px;
+}
+
+#header_wrap {
+    width: 200px;
+    height: 100px;
+    margin-left: 150px;
+}
+
+.header_logo {
+    width: 60px;
+    height: 60px;
+
+    margin-top: 20px;
+}
+
+.header_logo>img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    float: left;
+    margin: 20px 0 0 500px;
+}
+
+.header_txt {
+    float: left;
+     margin-left: 31px;
+     margin-top: 10px;
+    text-align: center;
+    width: 1000px;
+    line-height:2;
+}
+
+.header_txt>h1 {
+    font-size: 17px;
+    color: white;
+}
+
+.header_txt>a {
+    font-size: 16px;
+    color: white;
+    font-family: "微软雅黑";
+
+}
+.header_txt>a:hover{
+    cursor:pointer;
+}
+.photo{
+    background: url(../img/ding.png);
+    width:1200px;
+    height: 450px;
+    margin: 10px auto;
+}
+

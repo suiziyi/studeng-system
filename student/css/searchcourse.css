@@ -1,0 +1,611 @@
+/*
+* @Author: name
+* @Date:   2019-02-21 15:55:38
+* @Last Modified by:   name
+* @Last Modified time: 2019-05-10 20:25:14
+*/
+
+ .header-lea .title {
+
+    width: 200px;
+    // margin-top: 25px;
+    float: left;
+}
+.header-lea .logo{
+    font-size: 22px;
+    color: #FFFFFF;
+    bottom: 5px;
+    text-indent:60px;
+    width: 200px;
+
+}
+.header-lea .class{
+    height:20px;
+    width:240px;
+    position: absolute;
+    top:32px;
+    left:240px;
+
+}
+.header-lea .class .institute{
+    height:20px;
+    /*position:relative;*/
+    margin-right:12px;
+    border:1px solid #eee;
+    width: 100px;
+    text-align: center;
+    text-align-last: center;
+    /*padding-left: 5%;*/
+}
+
+/*.header-lea .class .institute option{*/
+    /*padding-left: calc(50% - 1em);*/
+/*}*/
+/*.header-lea .class .system option{*/
+    /*heigth:180px;*/
+/*}*/
+.header-lea .class .system{
+    height:20px;
+    width: 100px;
+    text-align: center;
+    text-align-last: center;
+    border:1px solid #eee;
+    /*text-align:center;*/
+    /*padding-left: 5%;*/
+}
+.header-lea .title img{
+    margin:-160px 0 10px 15px;
+}
+
+
+            .navbar-brand {
+                font-size: 15px;
+                color: #A2A2A2;
+            }
+
+            .search-course {
+                font-family: "Arial", "Hiragino Sans GB", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+            }
+
+            .search-course-list_result {
+                font-size: 16px;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                color: #999;
+                font-weight: 400;
+            }
+
+            .g-flow,
+            .g-all {
+                width: 1205px;
+                margin: 0 auto;
+                text-align: left;
+            }
+
+            .search-course-list_count {
+                color: #333;
+            }
+
+            .search-course-list_keyword {
+                color: #333;
+            }
+
+            .uc-course-list {
+                line-height: normal;
+                background: #f4f4f4;
+            }
+
+            .uc-course-list {
+                background-color: #F6F6F6 !important;
+            }
+
+            .uc-course-list_tab {
+                background: #fff;
+                padding-left: 15px;
+                margin-bottom: 20px;
+                height: 40px;
+            }
+
+            .uc-course-list .ux-tabs {
+                background: transparent;
+                background-image: initial;
+                background-position-x: initial;
+                background-position-y: initial;
+                background-size: initial;
+                background-repeat-x: initial;
+                background-repeat-y: initial;
+                background-attachment: initial;
+                background-origin: initial;
+                background-clip: initial;
+                background-color: transparent;
+            }
+
+            .f-fl {
+                float: left;
+            }
+
+            .ux-tabs {
+                border-radius: 3px;
+                background-color: #f5f7f7;
+            }
+
+            .uc-course-list .ux-tabs_hd {
+                border-bottom: none;
+            }
+
+            .ux-tabs_hd {
+                box-sizing: border-box;
+                height: 40px;
+                border-bottom: 1px solid #49AF4F;
+            }
+
+            .ux-tabs_hd {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            ul,
+            menu,
+            dir {
+                display: block;
+                list-style-type: disc;
+                -webkit-margin-before: 1em;
+                -webkit-margin-after: 1em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+                -webkit-padding-start: 40px;
+            }
+
+            .ux-tabs_hd > li {
+                float: left;
+                cursor: pointer;
+            }
+
+            li {
+                list-style: none;
+            }
+
+            .uc-course-list .ux-tabs_hd > li.z-crt,
+            .uc-course-list .ux-tabs_hd > li:hover {
+                color: #39a030;
+                border: none;
+            }
+
+            .uc-course-list .ux-tabs_hd > li {
+                -webkit-box-flex: none;
+                -moz-box-flex: none;
+                box-flex: none;
+                -webkit-flex: none;
+                -moz-flex: none;
+                -ms-flex: none;
+                flex: none;
+                width: auto !important;
+                height: 40px;
+                line-height: 20px;
+                border: none;
+                padding: 10px 16px;
+                font-size: 14px;
+                color: #343d42;
+            }
+
+            .ux-tabs_hd > li.z-crt {
+                background: white;
+                border-color: #49AF4F;
+                border-bottom-color: #fff;
+                color: #49AF4F;
+            }
+
+            .m-course-card-list {
+                margin-top: 30px;
+            }
+
+            .f-cb,
+            .g-container {
+                zoom: 1;
+            }
+
+            .u-clist {
+                z-index: 9;
+                margin-bottom: 0px;
+                height: 180px;
+                padding: 20px 0px 20px 0px;
+                border-bottom: 1px solid #e6e6e6;
+                -webkit-box-shadow: 0px 0px 0px transparent;
+                -moz-box-shadow: 0px 0px 0px transparent;
+                box-shadow: 0px 0px 0px transparent;
+            }
+
+
+            .u-clist {
+                margin-bottom: 10px;
+                height: 180px;
+                padding: 10px;
+            }
+
+            .f-pr {
+                position: relative;
+            }
+
+            .f-cb,
+            .g-container {
+                zoom: 1;
+            }
+
+            .f-bg {
+                background-color: #fff;
+                -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+            }
+
+            .f-pr {
+                position: relative;
+            }
+
+            .g-sd1 {
+                position: relative;
+                float: left;
+                width: 225px;
+                margin-right: -225px;
+            }
+
+            .g-mn1 {
+                float: right;
+                width: 100%;
+            }
+
+            .u-clist .u-img {
+                overflow: hidden;
+            }
+
+            .f-fl {
+                float: left;
+            }
+
+            .u-img {
+                position: relative;
+            }
+
+            .f-fl {
+                float: left;
+            }
+
+            .u-clist .u-img img {
+                -moz-transition: all 0.5s ease-in-out 0s;
+                -o-transition: all 0.5s ease-in-out 0s;
+                -webkit-transition: all 0.5s ease-in-out 0s;
+                transition: all 0.5s ease-in-out 0s;
+            }
+
+            img {
+                vertical-align: top;
+            }
+
+            html,
+            body,
+            fieldset,
+            img,
+            iframe,
+            abbr {
+                border: 0;
+            }
+
+            .u-img {
+                border: 1px solid #fff;
+            }
+
+            .u-clist .g-mn1c {
+                margin-left: 280px;
+            }
+
+            .g-mn1c {
+                margin-left: 245px;
+            }
+
+            .u-clist .cnt {
+                height: 180px;
+            }
+
+            .f-pr {
+                position: relative;
+            }
+
+            .u-clist .t1 {
+                margin-top: 0px;
+                line-height: 20px;
+                font-size: 16px;
+                height: 20px;
+                overflow: hidden;
+            }
+
+            .u-clist .t1 {
+                margin-top: 18px;
+                line-height: 1;
+                font-size: 16px;
+            }
+
+            .f-f0 {
+                font-family: "Arial", "Hiragino Sans GB", "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+            }
+
+            .u-clist .t1 a {
+                color: #333;
+            }
+
+            .f-line,
+            .f-thide {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .u-course-name {
+                max-width: 640px;
+                display: inline-block;
+            }
+
+            .f-thide,
+            .f-nowrp {
+                overflow: hidden;
+                -o-text-overflow: ellipsis;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .f-fcorange {
+                color: #FF9000;
+            }
+
+            .f-ib {
+                display: inline-block;
+                zoom: 1;
+            }
+
+            .u-clist .t2 {
+                margin-top: 10px;
+                font-size: 12px;
+                line-height: 15px;
+            }
+
+            .f-fc3 {
+                color: #333;
+            }
+
+            .f-f0 {
+                font-family: "Arial", "Hiragino Sans GB", "Microsoft YaHei", \5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif";
+            }
+
+            .u-clist .t21 {
+                margin-right: 20px;
+            }
+
+            .f-fc9 {
+                color: #999;
+            }
+
+            del,
+            ins,
+            s,
+            a,
+            a:hover {
+                text-decoration: none;
+            }
+
+            a,
+            button {
+                cursor: pointer;
+            }
+
+            .u-clist .brief {
+                font-size: 13px;
+                color: #666;
+            }
+
+            .u-clist .brief {
+                position: relative;
+                text-align: left;
+                color: #999;
+                line-height: 22px;
+                height: 44px;
+                overflow: hidden;
+            }
+
+            .u-clist .p5 {
+                margin: 15px 10px 20px 0;
+            }
+
+            .f-fcorange {
+                color: #FF9000;
+            }
+
+            .f-ib {
+                display: inline-block;
+                zoom: 1;
+            }
+
+            .f-fcorange {
+                color: #FF7A3E;
+            }
+
+.u-clist .margin-top0 {
+    margin-top: 0px !important;
+}
+.u-clist .t2 {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+}
+.u-clist .t2 {
+    margin-top: 25px;
+    line-height: 1.1;
+}
+.f-fc9 {
+    color: #999;
+}
+[class^="u-icon-"], [class*=" u-icon-"] {
+    font-family: 'icon-mooc';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.u-clist .hot {
+    font-size: 13px;
+    line-height: 15px;
+    background: transparent !important;
+    padding: 0 0 0 9px;
+}
+.u-clist .hot {
+    background: url(//mc.stu.126.net/res/images/ui/courseList.png?15aaeac4b10032736068b48d6fdec250) no-repeat 0 -40px;
+    padding: 0 6px 0 20px;
+    color: #999;
+    font-size: 12px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 76px;
+}
+.u-clist .time {
+    color: #ffac59;
+}
+.u-clist .over, .u-clist .time, .u-clist .isover {
+    margin-right: 45px;
+    margin-top: 0px;
+    display: inline-block;
+    color: #55b929;
+    background: transparent !important;
+    font-size: 14px;
+    line-height: 15px;
+}
+.u-clist .time {
+    color: #ff9326;
+}
+.u-clist .over .clock, .u-clist .time .clock, .u-clist .isover .clock {
+    font-size: 14px;
+    line-height: 18px;
+    margin-right: 5px;
+}
+.u-clist .clock {
+    margin-right: 9px !important;
+}
+.f-icon {
+    font-family: 'icon-mooc';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.u-clist .over .txt, .u-clist .time .txt, .u-clist .isover .txt {
+    vertical-align: 1px;
+}
+.u-clist .txt {
+    font-size: 13px;
+}
+Inherited from div.time.not-open
+.u-clist .time {
+    color: #ffac59;
+}
+.u-clist .over, .u-clist .time, .u-clist .isover {
+    margin-right: 45px;
+    margin-top: 0px;
+    display: inline-block;
+    color: #55b929;
+    background: transparent !important;
+    font-size: 14px;
+    line-height: 15px;
+}
+.u-clist .time {
+    color: #ff9326;
+}
+.u-clist .over, .u-clist .time, .u-clist .isover {
+    height: 18px;
+    line-height: 18px;
+}
+.u-clist .t2 {
+    margin-top: 10px;
+    line-height: 1.1;
+}
+.u-clist .margin-top0 {
+    margin-top: -10px !important;
+}
+.p5:hover{
+    color: #2B669A;
+}
+
+.g-mn1 {
+    float: right;
+    width: 100%;
+    height: 179px;
+}
+.btn-warning{
+    margin-left: 500px;
+}
+.course-card-list-pager {
+    margin-top: 45px;
+    margin-left: 75%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #f7f7f7;
+    padding-bottom: 90px;
+}
+.ux-pager {
+    text-align: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 12px;
+}
+.ux-pager > li {
+    background: white;
+}
+.ux-pager > li {
+    background: transparent !important;
+}
+<style>…</style>
+.ux-pager_itm, .ux-pager_btn, .ux-pager_sep {
+    margin: 0 2px;
+    display: inline-block;
+    text-align: center;
+}
+.ux-pager_btn__prev {
+    margin-right: 50px !important;
+}
+.ux-pager > li {
+    background: white;
+}
+.ux-pager > li {
+    background: transparent !important;
+}
+
+.ux-pager_itm, .ux-pager_btn, .ux-pager_sep {
+    margin: 0 2px;
+    display: inline-block;
+    text-align: center;
+}
+.ux-pager .ux-pager_btn__next {
+    margin-left: 50px !important;
+}
+
+.ux-pager > li {
+    background: white;
+}
+.ux-pager > li {
+    background: transparent !important;
+}
+
+.ux-pager_itm, .ux-pager_btn, .ux-pager_sep {
+    margin: 0 2px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+

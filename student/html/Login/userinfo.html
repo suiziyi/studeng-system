@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人设置</title>
+    <include file='Layout:ins_js' />
+    <include file='Layout:ins_css' />
+    <link rel="stylesheet" href="../../css/1_1login.css">
+    <link rel="stylesheet" href="../../css/1_2UserInfo.css">
+        <link rel="stylesheet" href="../../js/bootstrap/css/bootstrap.min.css">
+       <script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.0/jquery.cookie.min.js"></script>
+    <script src="../../js/session.js"></script>
+    <script src="../../js/information.js"></script>
+    <style>
+        .div-a{ float:left;width:49%;border:0px solid; }
+        .div-b{ float:left;width:49%;border:0px solid ;}
+        .div-c{ float:left;width:49%;border:0px solid ;}
+        .div-d{ float:left;width:49%;border:0px solid ;}
+        .div-e{ float:left;width:49%;border:0px solid ;}
+        .div-f{ float:left;width:49%;border:0px solid ;}
+        .rbox {
+            width: 100%;
+            height: 550px;
+            background-image: url(__IMG__/tjc.jpg);
+        }
+        label{
+            color: #E8E8E8;
+        }
+        .col-sm-3{
+            color: #E8E8E8;
+        }
+        .user-img{
+                height: 100px;
+                width: 100px;
+                /*border-radius: 50px;
+                margin-bottom: 30px;*/
+            }
+        .logo-title{
+            font-size:30px;
+            font-weight:normal;
+        }
+        .left_title{
+            left:100px;
+        }
+    </style>
+</head>
+<body id="nav">
+        <div class="header-lea" style="height:80px ">
+            <!--
+                        <img src="../img/header.jpg"  width="100%" height="100%"/>-->
+            <div class="title">
+
+                <div class="logo">&nbsp;天津财经大学</div>
+                <img src="../../img/logo.png" style="width: 40px;height: 40px;"/>
+            </div>
+            <div class="header-search">
+                <input type="text" name="datasearch" autocomplete="off" class="data-search font12" id="data-search" placeholder="搜索更多优质课程" role="combobox">
+            </div>
+            <a href="../CourseInfo/searchcourse.html"><button class="search-btn"></button></a>
+            <div class="nav" >
+                <ul>
+                    <li><a href="../Home/homepage.html">首页</a></li>
+                    <li class="exit_join"><a href="#">退出登录</a></li>
+
+                </ul>
+            </div>
+
+            <div class="head dropdown">
+                <a class="img dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="900" data-close-others="false">
+                    <img src="../../img/user.jpg" />
+                </a>
+
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1"  href="../CourseInfo/coursehome.html">我的学习</a></li>
+                <li style="padding-top:20px ;"><a tabindex="-1"  href="../Login/userinfo.html">个人设置</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+    <div id="person-container" >
+        <div class="person-center" >
+            <div class="boxTab">资料设置</div>
+            <div class="person-basic">
+            <span>理工学院&nbsp;&nbsp;&nbsp;信息科学与技术系&nbsp;&nbsp;&nbsp;  软件工程专业&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学号:001&nbsp;&nbsp;&nbsp;姓名:张三</span>
+            </div>
+            <div class="name" >
+                <em><b>*</b>&nbsp;昵称</em>
+                <input type="text" class="nickName" placeholder="请输入昵称">
+            </div>
+            <div class="mailbox">
+                <em><b>*</b>&nbsp;常用邮箱</em>
+                <input type="email" class="email" placeholder="请绑定邮箱">
+
+
+            </div>
+            <div class="headphoto">
+                <em>头像</em>
+                <img  src="../../img/head.jpg" alt="头像">
+                <div class="headphoto-text">
+                    <p>支持jpg、gif、png、bmp格式，建议少于20M</p>
+                    <input type="file" name="file" id = "input_file" >
+                </div>
+            </div>
+            <div class="sex">
+                <em>性别</em>
+                <input class="sex1" type="text" placeholder="男/女">
+            </div>
+            <div class="qq">
+                <em>QQ</em>
+                <input class="qq1" type="text" placeholder="请输入QQ号码">
+            </div>
+            <div class="wechat">
+                <em>微信</em>
+                <input class="wechat1" type="text" placeholder="请输入微信号">
+            </div>
+            <div class="phone">
+                <em>手机号码</em>
+                <input class="phone1" type="text" placeholder="请输入手机号">
+                <!-- <button class="reset">修改</button> -->
+            </div>
+            <div class="button">
+                <button class="password">重置密码</button>
+                <button class="save">保存</button>
+            </div>
+        </div>
+
+
+    </div>
+    <footer id="footer">
+            <div class="top">
+                <div class="block left">
+                    <h2>管理机构</h2>
+                    <hr>
+                    <div class="div-a">
+                    <ul>
+                        <li> <a class="c49453" href="http://public.tjufe.edu.cn/office/xiaoban_new/" onclick="_addDynClicks('wburl',1247363695,4657)" target="_blank">党委、校长办公室</a></li>
+                        <li> <a class="c49453" href="http://public.tjufe.edu.cn/Office/jiaowuchu/" onclick="_addDynClicks('wburl',1247363695,4469)" target="_blank">教务处</a></li>
+                        <li> <a class="c49453" href="http://public.tjufe.edu.cn/Office/Scientific&amp;Research/" onclick="_addDynClicks('wburl',1247363695,4470)" target="_blank">科研处</a></li>
+                        <li> <a class="c49453" href="http://pub.tjufe.edu.cn/department/yanjiushengyuan/index.asp" onclick="_addDynClicks('wburl',1247363695,4716)" target="_blank">研究生院</a></li>
+                        <li><a class="c49454" href="http://gjjl.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4708)" target="_blank">国际交流与合作处</a></li>
+                        <li><a class="c49454" href="http://public.tjufe.edu.cn/Office/xueji/stumng.htm" onclick="_addDynClicks('wburl',1247363695,4637)" target="_blank">学籍管理</a></li>
+                    </ul>
+                    </div>
+                    <div class="div-b">
+                    <ul>
+                        <li><a class="c49454" href="http://cw.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4503)" target="_blank">财务处</a></li>
+                        <li><a class="c49454" href="http://public.tjufe.edu.cn/Office/graduation/" onclick="_addDynClicks('wburl',1247363695,4506)" target="_blank">就业指导中心</a></li>
+                        <li><a class="c49435" href="http://lib.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4515)" target="_blank">图书馆</a></li>
+                        <li><a class="c49454" href="http://zs.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4502)" target="_blank">招生考试办公室</a></li>
+                        <li><a class="c49454" href="http://xkb.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4647)" target="_blank">学科建设办公室</a></li>
+                        <li><a class="c49454" href="http://xgb.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4505)" target="_blank">学工部（团委武装部）</a></li>
+                    </ul></div>
+                </div>
+                <div class="block center">
+                    <h2>教学单位</h2>
+                    <hr>
+                    <div class="div-c">
+                    <ul>
+                        <li><a class="c49434" href="http://business.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4472)" target="_blank">商学院</a></li>
+                        <li> <a class="c49434" href="http://public.tjufe.edu.cn/department/economic-school/" onclick="_addDynClicks('wburl',1247363695,4507)" target="_blank">经济学院</a></li>
+                        <li><a class="c49434" href="http://ligong.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4483)" target="_blank">理工学院</a></li>
+                        <li> <a class="c49434" href="http://public.tjufe.edu.cn/department/renwenxueyuan/" onclick="_addDynClicks('wburl',1247363695,4508)" target="_blank">人文学院</a></li>
+                        <li><a class="c49434" href="http://law.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4487)" target="_blank">法学院</a></li>
+                        <li><a class="c49434" href="http://public.tjufe.edu.cn/department/ART/" onclick="_addDynClicks('wburl',1247363695,4509)" target="_blank">艺术学院</a></li>
+                    </ul>
+                    </div>
+                    <div class="div-d">
+                    <ul>
+                        <li><a class="c49434" href="http://ibs.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4474)" target="_blank">国际工商学院</a></li>
+                        <li><a class="c49435" href="http://dagong.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4492)" target="_blank">大公信用管理学院</a></li>
+                        <li><a class="c49434" href="http://inter.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4510)" target="_blank">国际教育学院</a></li>
+                        <li><a class="c49434" href="http://zhujiang.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,12831)" target="_blank">珠江学院</a></li>
+                        <li><a class="c49435" href="http://mbaeducation.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4512)" target="_blank">MBA教育中心</a></li>
+                        <li><a class="c49435" href="http://sce.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4490)" target="_blank">继续教育学院</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="block right">
+                    <h2>研究机构</h2>
+                    <hr>
+                    <div class="div-e">
+                    <ul>
+                        <li><a class="c49436" href="http://xcxb.cbpt.cnki.net/WKC/WebPublication/index.aspx?mid=xcxb" onclick="_addDynClicks('wburl',1247363695,4648)" target="_blank">《现代财经》</a></li>
+                        <li><a class="c49436" href="http://rcfi.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4517)" target="_blank">金融与保险研究中心</a></li>
+                        <li><a class="c49436" href="http://tj.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4519)" target="_blank">中国经济统计研究中心</a></li>
+                        <li><a class="c49436" href="http://tafta.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4520)" target="_blank">天津市自由贸易区研究院</a></li>
+                        <li><a class="c49436" href="http://management.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,12958)" target="_blank">工商管理研究中心</a></li>
+                        <li><a class="c49436" href="http://bh.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4482)" target="_blank">中国滨海金融协同创新中心</a></li>
+                    </ul>
+                    </div>
+                    <div class="div-f">
+                    <ul>
+                        <li><a class="c49436" href="http://cxcy.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4516)" target="_blank">创新与创业研究中心</a></li>
+                        <li><a class="c49436" href="http://pub.tjufe.edu.cn/department/fzx/" onclick="_addDynClicks('wburl',1247363695,4518)" target="_blank">法律经济分析与政策评价中心</a></li>
+                        <li><a class="c49436" href="http://public.tjufe.edu.cn/department/jingjiguanli/" onclick="_addDynClicks('wburl',1247363695,4480)" target="_blank">现代经济管理研究院</a></li>
+                        <li><a class="c49436" href="http://ads.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4521)" target="_blank">国合天财发展战略研究院</a></li>
+                        <li><a class="c49436" href="http://iccmms.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4522)" target="_blank">管理可计算建模协同创新中心</a></li>
+                        <li><a class="c49436" href="http://ciae.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,12963)" target="_blank">无形资产评价协同创新中心</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">2014天津财经大学 津icp备05003050号 津教备0017号</div>
+    </footer>
+            <!-- 退出登录 -->
+            <div class="modal fade" id="exit" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title text-danger" id="operationDialogDeleteTital"></h4>
+                        </div>
+                        <div class="modal-body " style="width: 200px;">
+                            <div>
+                                <lable>确认退出登录？</lable>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal" id="operationDialogDeleteSubmit"><i class="fa fa-print"></i> 确认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+</html>

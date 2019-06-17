@@ -1,0 +1,185 @@
+/*
+* @Author: name
+* @Date:   2019-02-20 17:21:34
+* @Last Modified by:   name
+* @Last Modified time: 2019-05-05 16:36:31
+*/
+@charset "utf-8";
+
+#person-container{
+    width: 100%;
+    /*min-height:1263px;*/
+    height: 1100px;
+    // background-color: #eee;
+    background-image: url(../img/tjc.jpg);
+}
+#person-container .person-center{
+    width: 80%;
+    min-height: 1000px;
+    background-color: #eee;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+
+}
+#person-container .boxTab{
+    width: 100%;
+    height: 60px;
+    color: #444;
+    text-align: center;
+    line-height: 60px;
+    display: block;
+    font-size: 22px;
+
+    /*background-color: #10ae58;*/
+}
+#person-container .person-basic{
+    /*margin-left: 20px;*/
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: block;
+    color: #BC8F8F;
+
+    font-size: 20px;
+    line-height: 50px;
+    /*background-color: red;*/
+}
+#person-container .name{
+    /*background-color: green;*/
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+}
+#person-container .name input{
+    margin-left:80px;
+
+}
+#person-container .mailbox{
+    margin-top: 40px;
+    height: 40px;
+}
+#person-container .headphoto{
+    margin-top: 60px;
+    /*background-color: red;*/
+    width: 100%;
+    height: 240px;
+}
+#person-container img{
+    margin-left: 95px;
+    width: 200px;
+    height: 200px;
+}
+#person-container .headphoto-text{
+    width: 400px;
+    /*height: 240px;*/
+    margin-left: 10px;
+    display: inline-block;
+
+}
+#person-container .headphoto-text p{
+    position: relative;
+    top: -40px;
+    color: #b3adad;
+    font-size:15px;
+}
+#person-container .headphoto-text input{
+    width: 200px;
+    position: relative;
+    top:85px;
+    right: 40px;
+    background-color: #10ae58;
+}
+#person-container .sex{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+}
+// #person-container .sex form{
+//     display: inline-block;
+//     line-height: 40px;
+//     position: relative;
+//     top: 5px;
+//     margin-left: 53px;
+// }
+#person-container .sex input{
+margin-left:95px;
+}
+#person-container .qq{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+}
+#person-container .qq input{
+    margin-left:105px;
+
+}
+#person-container .wechat{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+}
+#person-container .wechat input{
+    margin-left:95px;
+
+}
+#person-container .phone{
+    margin-top: 40px;
+    width: 100%;
+    height: 40px;
+}
+#person-container .phone input{
+    margin-left:55px;
+
+}
+#person-container .button{
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 400px;
+    height: 60px;
+}
+#person-container .button .password{
+    margin-left: 50px;
+    background-color: #10ae58;
+    border-radius: 10px;
+    color: #ADD8E6;
+    width: 100px;
+    height: 45px;
+    font-size: 19px;
+}
+#person-container .button .save{
+    margin-left: 140px;
+    background-color: #10ae58;
+    border-radius: 10px;
+    color: #ADD8E6;
+    width: 70px;
+    height: 45px;
+    font-size: 21px;
+}
+#person-container em{
+    margin-left: 240px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #696969;
+    font-style: normal;
+}
+#person-container b{
+    color: red;
+}
+#person-container input{
+    margin-left: 40px;
+    margin-top: 5px;
+    border: 1px solid #eee;
+    width: 320px;
+    font-size: 15px;
+    line-height: 30px;
+}
+#person-container .reset{
+    margin-left: 30px;
+    border-radius: 10px;
+    background-color: #10ae58;
+    color: #ADD8E6;
+    width: 70px;
+    height: 38px;
+    font-size: 15px;
+}

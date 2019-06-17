@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>搜索课程</title>
+        <meta http-equiv="Access-Control-Allow-Origin" content="*" />
+        <!--<script>-->
+            <!--document.domain='39.96.80.104';-->
+        <!--</script>-->
+
+        <link rel="stylesheet" type="text/css" href="../../css/3_1coursehome.css"/>
+        <include file='Layout:ins_css' />
+
+        <link rel="stylesheet" type="text/css" href="../../css/1_1login.css">
+        <!-- <link rel="stylesheet" type="text/css" href="../css/2_1HomePage.css"> -->
+        <link rel="stylesheet" type="text/css" href="../../css/searchcourse.css"/>
+         <link rel="stylesheet" type="text/css" href="../../css/ins_header.css">
+         <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+    <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+    <script src="../../js/search.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-cookie/1.0/jquery.cookie.min.js"></script>
+        <script src="../../js/session.js"></script>
+
+        <style>
+            .navbar-header {
+                margin-left: 60px;
+            }
+            a:focus{
+                outline: none;
+            }
+
+            #footer ul{
+                text-indent: -20px;
+
+            }
+            .div-a{ float:left;width:49%;border:0px solid ;}
+            .div-b{ float:left;width:49%;border:0px solid ;}
+            .div-c{ float:left;width:49%;border:0px solid ;}
+            .div-d{ float:left;width:49%;border:0px solid ;}
+            .div-e{ float:left;width:49%;border:0px solid ;}
+            .div-f{ float:left;width:49%;border:0px solid ;}
+            .g-mn1 a:hover ,.p5:hover{
+                text-decoration:none;
+                color:#999999;
+            }
+        .header-lea .header-search {
+            top: 31%;
+            left: 20%;
+        }
+
+        .header-lea .search-btn {
+            right: -16%;
+
+        }
+        .pagination li a:hover{
+            background-color:#347ab6;
+            color:#fff;
+        }
+        .attend_join:hover{
+            opacity: 0.5;
+        }
+        .u-course-name:hover{
+            color:#347ab6;
+            cursor:pointer;
+        }
+        .left_title{
+                left:100px;
+        }
+        </style>
+    </head>
+
+    <body>
+        <div class="header-lea" style="height:80px ">
+            <!--
+                        <img src="../img/header.jpg"  width="100%" height="100%"/>-->
+            <div class="title">
+
+                <div class="logo">&nbsp;天津财经大学</div>
+                <img src="../../img/logo.png" style="width: 40px;height: 40px; margin-top:-35px;"/>
+            </div>
+            <div class="class">
+
+              <select name="institute" id="institute" class="institute" >
+                <option value="" class="first">请选择学院</option>
+              </select>
+              <select name="system" id="system" class="system">
+                <option value="" class="first">请选择系</option>
+              </select>
+            </div>
+            <div class="header-search">
+                <input type="text" name="datasearch" autocomplete="off" class="data-search font12" id="data-search" placeholder="搜索更多优质课程" role="combobox">
+            </div>
+            <a href="javascript::"><button class="search-btn"></button></a>
+            <div class="nav" style="margin-right:40px;">
+                <ul>
+                    <li><a href="../Home/homepage.html">首页</a></li>
+                    <li class="login_join"><a href="#">登录</a></li>
+
+                </ul>
+            </div>
+
+            <div class="head dropdown">
+                <a class="img dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="900" data-close-others="false">
+                    <img src="../../img/user.jpg" />
+                </a>
+
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1"  href="../CourseInfo/coursehome.html">我的学习</a></li>
+                <li style="padding-top:20px ;"><a tabindex="-1"  href="../Login/userinfo.html">个人设置</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+<div class="search-course" style="background-color: #f6f6f6;color: #444;">
+
+                    <ul id="myTab"  class="nav nav-tabs" style="height:41px ;width: 1200px;margin:1px 100px 0 74px; text-align: center; background-color:#FFFFFF ; font-size:15px;">
+                        <li class="all active" >
+                            <a href="#start" data-toggle="tab" style="width: 70px;"> 全部</a>
+                        </li>
+                        <li class="will"><a href="#will_start" data-toggle="tab" style="width: 140px;">即将开始</a></li>
+                         <li class="going"><a href="#doing" data-toggle="tab" style="width: 140px;">正在进行</a></li>
+
+                        <li class="finish"><a href="#finish" data-toggle="tab" style="width: 140px;">已经结束</a></li>
+
+                     </ul>
+
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="start">
+            <div class="m-course-card-list f-cb">
+                <div class="m-course-list" id="">
+                    <div class="g-flow">
+                        <div class="u-clist f-bg f-cb f-pr j-href ga-click">
+                                <div class="g-sd1">
+                                    <div class="u-img f-f1">
+                                        <!--<img src="" alt="<span class="f-fcorange f-id">C</span>语言程序设计"  style="height: 150px;width: 265px;"/>-->
+                                        <img src="../../img/c.png" style="height: 150px;width: 265px;"/>
+                                    </div>
+                                </div>
+                                <div class="g-mn1"   onclick="window.open('information.html')">
+                                    <div class="g-mn1c">
+                                        <div class="cnt f-pr">
+                                            <div class="t1 f-f0 f-cb">
+
+
+                                                    <span class="u-course-name f-thide">
+                                                        <span class="f-fcorange f-ib"> C </span>
+                                                        语言程序设计(下)
+                                                    </span>
+
+                                            </div>
+                                            <div class="t2 f-fc3 f-nowrp f-f0">
+                                                <a class="t21 f-fc9" href="#">理工学院</a>
+                                                <a class="f-fc9" href="#">王老师</a>
+                                            </div>
+
+                                                <span class="p5 brief f-ib f-f0 f-cb ">
+                                                                                Kenneeth Lane Thompson为了方便的玩自己编写的游戏程序，用汇编语言写了UNIX操作系统，又为了更方便的写这个UNIX而创造了
+                                                    <span class="f-fcorange f-ib">C</span>。创造在游戏中产生，业绩在创造中成就！从此，<span class="f-fcorange f-ib">C</span>便一发不可收拾，独…
+                                                </span>
+
+                                            <div class="t2 f-fc3 f-nowrp f-f0 margin-top0">
+                                                <span class="u-icon-person f-fc9"><i class="fa fa-user-o"></i></span>
+                                                <span class="hot">3938人参加</span>
+                                                <div class="time not-open">
+                                                    <span class="f-icon clock u-icon-clock2"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="txt">2018-08-26 开课</span></div>
+                                                    <span class="join-in-course" id="UserLogout" >
+                                                        <button type="button" class="btn btn-warning attend_join" style="width: 80px; height: 25px;background-color: #FD7531;font-size: 12px;margin-right: -50px;line-height:7px;">立即参加</button>
+                                                    </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="u-clist f-bg f-cb f-pr j-href ga-click">
+                                <div class="g-sd1">
+                                    <div class="u-img f-f1">
+                                        <!--<img src="" alt="<span class="f-fcorange f-id">C</span>语言程序设计"  style="height: 150px;width: 265px;"/>-->
+                                        <img src="../../img/c++.jpg" style="height: 150px;width: 265px;"/>
+                                    </div>
+                                </div>
+                                <div class="g-mn1" onclick="window.open('information.html')">
+                                    <div class="g-mn1c">
+                                        <div class="cnt f-pr">
+                                            <div class="t1 f-f0 f-cb">
+
+                                                    <span class="u-course-name f-thide">
+                                                        <span class="f-fcorange f-ib"> C</span>
+                                                        ++语言程序设计(下)
+                                                    </span>
+
+                                            </div>
+                                            <div class="t2 f-fc3 f-nowrp f-f0">
+                                                <a class="t21 f-fc9" href="">理工学院</a>
+                                                <a class="f-fc9" href="">王老师</a>
+                                            </div>
+
+                                                <span class="p5 brief f-ib f-f0 f-cb ">
+                                                                                Kenneeth Lane Thompson为了方便的玩自己编写的游戏程序，用汇编语言写了UNIX操作系统，又为了更方便的写这个UNIX而创造了
+                                                    <span class="f-fcorange f-ib">C</span>。创造在游戏中产生，业绩在创造中成就！从此，<span class="f-fcorange f-ib">C</span>便一发不可收拾，独…
+                                                </span>
+
+                                            <div class="t2 f-fc3 f-nowrp f-f0 margin-top0">
+                                                <span class="u-icon-person f-fc9"><i class="fa fa-user-o"></i></span>
+                                                <span class="hot">3938人参加</span>
+                                                <div class="time not-open">
+                                                    <span class="f-icon clock u-icon-clock2"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="txt">2018-03-26 开课</span></div>
+                                                    <span class="join-in-course" id="UserLogout">
+                                                        <button type="button" class="btn btn-warning attend_join" style="width: 80px; height: 25px;background-color: #FD7531;font-size: 12px;margin-right: -50px;line-height:7px;">立即参加</button>
+                                                    </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+
+
+                        <div class="u-clist f-bg f-cb f-pr j-href ga-click">
+                                <div class="g-sd1">
+                                    <div class="u-img f-f1">
+                                        <!--<img src="" alt="<span class="f-fcorange f-id">C</span>语言程序设计"  style="height: 150px;width: 265px;"/>-->
+                                        <img src="../../img/c_lesson3.png" style="height: 150px;width: 265px;"/>
+                                    </div>
+                                </div>
+                                <div class="g-mn1" onclick="window.open('information.html')">
+                                    <div class="g-mn1c">
+                                        <div class="cnt f-pr">
+                                            <div class="t1 f-f0 f-cb">
+
+                                                    <span class="u-course-name f-thide">
+                                                        <span class="f-fcorange f-ib"> C</span>
+                                                        语言程序设计基础
+                                                    </span>
+
+                                            </div>
+                                            <div class="t2 f-fc3 f-nowrp f-f0">
+                                                <a class="t21 f-fc9" href="">理工学院</a>
+                                                <a class="f-fc9" href="">王老师</a>
+                                            </div>
+
+                                                <span class="p5 brief f-ib f-f0 f-cb ">
+                                                                                Kenneeth Lane Thompson为了方便的玩自己编写的游戏程序，用汇编语言写了UNIX操作系统，又为了更方便的写这个UNIX而创造了
+                                                    <span class="f-fcorange f-ib">C</span>。创造在游戏中产生，业绩在创造中成就！从此，<span class="f-fcorange f-ib">C</span>便一发不可收拾，独…
+                                                </span>
+
+                                            <div class="t2 f-fc3 f-nowrp f-f0 margin-top0">
+                                                <span class="u-icon-person f-fc9"><i class="fa fa-user-o"></i></span>
+                                                <span class="hot">3938人参加</span>
+                                                <div class="time not-open">
+                                                    <span class="f-icon clock u-icon-clock2"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="txt">2019-03-26 开课</span></div>
+                                                    <span class="join-in-course" id="UserLogout">
+                                                        <button type="button" class="btn btn-warning attend_join" style="width: 80px; height: 25px;background-color: #FD7531;font-size: 12px;margin-right: -50px;line-height:7px;">立即参加</button>
+                                                    </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="will_start">
+            <div class="m-course-card-list f-cb">
+                <div class="m-course-list" id="">
+                    <div class="g-flow">
+                        <div class="u-clist f-bg f-cb f-pr j-href ga-click">
+                                <div class="g-sd1">
+                                    <div class="u-img f-f1">
+                                        <!--<img src="" alt="<span class="f-fcorange f-id">C</span>语言程序设计"  style="height: 150px;width: 265px;"/>-->
+                                        <img src="../../img/c_lesson3.png" style="height: 150px;width: 265px;"/>
+                                    </div>
+                                </div>
+                                <div class="g-mn1"  onclick="window.open('infor.html')">
+                                    <div class="g-mn1c">
+                                        <div class="cnt f-pr">
+                                            <div class="t1 f-f0 f-cb">
+
+                                                    <span class="u-course-name f-thide">
+                                                        <span class="f-fcorange f-ib"> C</span>
+                                                        语言程序设计基础
+                                                    </span>
+
+                                            </div>
+                                            <div class="t2 f-fc3 f-nowrp f-f0">
+                                                <a class="t21 f-fc9" href="#">理工学院</a>
+                                                <a class="f-fc9" href="#">王老师</a>
+                                            </div>
+
+                                                <span class="p5 brief f-ib f-f0 f-cb ">
+                                                                                Kenneeth Lane Thompson为了方便的玩自己编写的游戏程序，用汇编语言写了UNIX操作系统，又为了更方便的写这个UNIX而创造了
+                                                    <span class="f-fcorange f-ib">C</span>。创造在游戏中产生，业绩在创造中成就！从此，<span class="f-fcorange f-ib">C</span>便一发不可收拾，独…
+                                                </span>
+
+                                            <div class="t2 f-fc3 f-nowrp f-f0 margin-top0">
+                                                <span class="u-icon-person f-fc9"><i class="fa fa-user-o"></i></span>
+                                                <span class="hot">3938人参加</span>
+                                                <div class="time not-open">
+                                                    <span class="f-icon clock u-icon-clock2"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="txt">2019-03-26 开课</span></div>
+                                                    <span class="join-in-course" id="UserLogout">
+                                                        <button type="button" class="btn btn-warning attend_join" style="width: 80px; height: 25px;background-color: #FD7531;font-size: 12px;margin-right: -50px;line-height:7px;">立即报名</button>
+                                                    </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="doing">
+            <div class="m-course-card-list f-cb">
+                <div class="m-course-list" id="">
+                    <div class="g-flow">
+                        <div class="u-clist f-bg f-cb f-pr j-href ga-click">
+                                <div class="g-sd1">
+                                    <div class="u-img f-f1">
+                                        <!--<img src="" alt="<span class="f-fcorange f-id">C</span>语言程序设计"  style="height: 150px;width: 265px;"/>-->
+                                        <img src="../../img/c++.jpg" style="height: 150px;width: 265px;"/>
+                                    </div>
+                                </div>
+                                <div class="g-mn1" onclick="window.open('information.html')">
+                                    <div class="g-mn1c">
+                                        <div class="cnt f-pr">
+                                            <div class="t1 f-f0 f-cb">
+
+                                                    <span class="u-course-name f-thide">
+                                                        <span class="f-fcorange f-ib"> C</span>
+                                                        ++语言程序设计(下)
+                                                    </span>
+
+                                            </div>
+                                            <div class="t2 f-fc3 f-nowrp f-f0">
+                                                <a class="t21 f-fc9" href="">理工学院</a>
+                                                <a class="f-fc9" href="">王老师</a>
+                                            </div>
+
+                                                <span class="p5 brief f-ib f-f0 f-cb ">
+                                                                                Kenneeth Lane Thompson为了方便的玩自己编写的游戏程序，用汇编语言写了UNIX操作系统，又为了更方便的写这个UNIX而创造了
+                                                    <span class="f-fcorange f-ib">C</span>。创造在游戏中产生，业绩在创造中成就！从此，<span class="f-fcorange f-ib">C</span>便一发不可收拾，独…
+                                                </span>
+
+                                            <div class="t2 f-fc3 f-nowrp f-f0 margin-top0">
+                                                <span class="u-icon-person f-fc9"><i class="fa fa-user-o"></i></span>
+                                                <span class="hot">3938人参加</span>
+                                                <div class="time not-open">
+                                                    <span class="f-icon clock u-icon-clock2"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="txt">2018-03-26 开课</span></div>
+                                                    <span class="join-in-course" id="UserLogout">
+                                                        <button type="button" class="btn btn-warning attend_join" style="width: 80px; height: 25px;background-color: #00CD00;font-size: 12px;margin-right: -50px;line-height:7px;">立即参加</button>
+                                                    </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="u-clist f-bg f-cb f-pr j-href ga-click">
+                                <div class="g-sd1">
+                                    <div class="u-img f-f1">
+                                        <!--<img src="" alt="<span class="f-fcorange f-id">C</span>语言程序设计"  style="height: 150px;width: 265px;"/>-->
+                                        <img src="../../img/c.png" style="height: 150px;width: 265px;"/>
+                                    </div>
+                                </div>
+                                <div class="g-mn1" onclick="window.open('information.html')">
+                                    <div class="g-mn1c">
+                                        <div class="cnt f-pr">
+                                            <div class="t1 f-f0 f-cb">
+
+                                                    <span class="u-course-name f-thide">
+                                                        <span class="f-fcorange f-ib"> C </span>
+                                                        语言程序设计(下)
+                                                    </span>
+
+                                            </div>
+                                            <div class="t2 f-fc3 f-nowrp f-f0">
+                                                <a class="t21 f-fc9" href="#">理工学院</a>
+                                                <a class="f-fc9" href="#">王老师</a>
+                                            </div>
+
+                                                <span class="p5 brief f-ib f-f0 f-cb ">
+                                                                                Kenneeth Lane Thompson为了方便的玩自己编写的游戏程序，用汇编语言写了UNIX操作系统，又为了更方便的写这个UNIX而创造了
+                                                    <span class="f-fcorange f-ib">C</span>。创造在游戏中产生，业绩在创造中成就！从此，<span class="f-fcorange f-ib">C</span>便一发不可收拾，独…
+                                                </span>
+
+                                            <div class="t2 f-fc3 f-nowrp f-f0 margin-top0">
+                                                <span class="u-icon-person f-fc9"><i class="fa fa-user-o"></i></span>
+                                                <span class="hot">3938人参加</span>
+                                                <div class="time not-open">
+                                                    <span class="f-icon clock u-icon-clock2"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="txt">2018-08-26 开课</span></div>
+                                                    <span class="join-in-course" id="UserLogout">
+                                                        <button type="button" class="btn btn-warning attend_join" style="width: 80px; height: 25px;background-color:#00CD00;font-size: 12px;margin-right: -50px;line-height:7px;">立即参加</button>
+                                                    </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="finish">
+            <div class="m-course-card-list f-cb">
+                <div class="m-course-list" id="">
+                    <div class="g-flow">
+                        <div class="u-clist f-bg f-cb f-pr j-href ga-click">
+                                <div class="g-sd1">
+                                    <div class="u-img f-f1">
+                                        <!--<img src="" alt="<span class="f-fcorange f-id">C</span>语言程序设计"  style="height: 150px;width: 265px;"/>-->
+                                        <img src="../../img/c_lesson3.png" style="height: 150px;width: 265px;"/>
+                                    </div>
+                                </div>
+                                <div class="g-mn1" onclick="window.open('infor3.html')">
+                                    <div class="g-mn1c">
+                                        <div class="cnt f-pr">
+                                            <div>
+
+                                            <div class="t1 f-f0 f-cb">
+
+                                                    <span class="u-course-name f-thide">
+                                                        <span class="f-fcorange f-ib"> C</span>
+                                                        语言程序设计基础
+                                                    </span>
+
+                                            </div>
+                                            <div class="t2 f-fc3 f-nowrp f-f0">
+                                                <a class="t21 f-fc9" href="#">理工学院</a>
+                                                <a class="f-fc9" href="">王老师</a>
+                                            </div>
+
+                                                <span class="p5 brief f-ib f-f0 f-cb ">
+                                                                                Kenneeth Lane Thompson为了方便的玩自己编写的游戏程序，用汇编语言写了UNIX操作系统，又为了更方便的写这个UNIX而创造了
+                                                    <span class="f-fcorange f-ib">C</span>。创造在游戏中产生，业绩在创造中成就！从此，<span class="f-fcorange f-ib">C</span>便一发不可收拾，独…
+                                                </span>
+
+                                            </div>
+
+                                            <div class="t2 f-fc3 f-nowrp f-f0 margin-top0">
+                                                <span class="u-icon-person f-fc9"><i class="fa fa-user-o"></i></span>
+                                                <span class="hot">3938人参加</span>
+                                                <div class="time not-open">
+                                                    <span class="f-icon clock u-icon-clock2"><i class="fa fa-clock-o"></i></span>
+                                                    <span class="txt">2019-03-26 开课</span></div>
+                                                    <span class="join-in-course" id="UserLogout">
+                                                        <button type="button" class="btn btn-warning attend_join" style="width: 80px; height: 25px;background-color: #A6A6A6;font-size: 12px;margin-right: -50px;line-height:7px;">查看详情</button>
+                                                    </span>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+                <!-- 课程 -->
+                <!--<div class="div_hidden">-->
+                    <!--<input type="hidden" name="teachingClassId" value=""/>-->
+                <!--</div>-->
+
+                <div class="course-card-list-pager ga-click f-f0" data-action="翻页点击" >
+
+                <ul class="pagination" >
+                    <li><a href="javascript::">&laquo;</a></li>
+                    <li class="active"><a href="javascript::">1</a></li>
+                    <li><a href="javascript::">2</a></li>
+                    <li><a href="javascript::">3</a></li>
+                    <li><a href="javascript::">4</a></li>
+                    <li><a href="javascript::">5</a></li>
+                    <li><a href="javascript::">&raquo;</a></li>
+                </ul>
+                </div>
+</div>
+
+    <footer id="footer">
+            <div class="top">
+                <div class="block left">
+                    <h2>管理机构</h2>
+                    <hr>
+                    <div class="div-a">
+                    <ul>
+                        <li> <a class="c49453" href="http://public.tjufe.edu.cn/office/xiaoban_new/" onclick="_addDynClicks('wburl',1247363695,4657)" target="_blank">党委、校长办公室</a></li>
+                        <li> <a class="c49453" href="http://public.tjufe.edu.cn/Office/jiaowuchu/" onclick="_addDynClicks('wburl',1247363695,4469)" target="_blank">教务处</a></li>
+                        <li> <a class="c49453" href="http://public.tjufe.edu.cn/Office/Scientific&amp;Research/" onclick="_addDynClicks('wburl',1247363695,4470)" target="_blank">科研处</a></li>
+                        <li> <a class="c49453" href="http://pub.tjufe.edu.cn/department/yanjiushengyuan/index.asp" onclick="_addDynClicks('wburl',1247363695,4716)" target="_blank">研究生院</a></li>
+                        <li><a class="c49454" href="http://gjjl.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4708)" target="_blank">国际交流与合作处</a></li>
+                        <li><a class="c49454" href="http://public.tjufe.edu.cn/Office/xueji/stumng.htm" onclick="_addDynClicks('wburl',1247363695,4637)" target="_blank">学籍管理</a></li>
+                    </ul>
+                    </div>
+                    <div class="div-b">
+                    <ul>
+                        <li><a class="c49454" href="http://cw.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4503)" target="_blank">财务处</a></li>
+                        <li><a class="c49454" href="http://public.tjufe.edu.cn/Office/graduation/" onclick="_addDynClicks('wburl',1247363695,4506)" target="_blank">就业指导中心</a></li>
+                        <li><a class="c49435" href="http://lib.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4515)" target="_blank">图书馆</a></li>
+                        <li><a class="c49454" href="http://zs.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4502)" target="_blank">招生考试办公室</a></li>
+                        <li><a class="c49454" href="http://xkb.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4647)" target="_blank">学科建设办公室</a></li>
+                        <li><a class="c49454" href="http://xgb.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4505)" target="_blank">学工部（团委武装部）</a></li>
+                    </ul></div>
+                </div>
+                <div class="block center">
+                    <h2>教学单位</h2>
+                    <hr>
+                    <div class="div-c">
+                    <ul>
+                        <li><a class="c49434" href="http://business.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4472)" target="_blank">商学院</a></li>
+                        <li> <a class="c49434" href="http://public.tjufe.edu.cn/department/economic-school/" onclick="_addDynClicks('wburl',1247363695,4507)" target="_blank">经济学院</a></li>
+                        <li><a class="c49434" href="http://ligong.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4483)" target="_blank">理工学院</a></li>
+                        <li> <a class="c49434" href="http://public.tjufe.edu.cn/department/renwenxueyuan/" onclick="_addDynClicks('wburl',1247363695,4508)" target="_blank">人文学院</a></li>
+                        <li><a class="c49434" href="http://law.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4487)" target="_blank">法学院</a></li>
+                        <li><a class="c49434" href="http://public.tjufe.edu.cn/department/ART/" onclick="_addDynClicks('wburl',1247363695,4509)" target="_blank">艺术学院</a></li>
+                    </ul>
+                    </div>
+                    <div class="div-d">
+                    <ul>
+                        <li><a class="c49434" href="http://ibs.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4474)" target="_blank">国际工商学院</a></li>
+                        <li><a class="c49435" href="http://dagong.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4492)" target="_blank">大公信用管理学院</a></li>
+                        <li><a class="c49434" href="http://inter.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4510)" target="_blank">国际教育学院</a></li>
+                        <li><a class="c49434" href="http://zhujiang.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,12831)" target="_blank">珠江学院</a></li>
+                        <li><a class="c49435" href="http://mbaeducation.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4512)" target="_blank">MBA教育中心</a></li>
+                        <li><a class="c49435" href="http://sce.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4490)" target="_blank">继续教育学院</a></li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="block right">
+                    <h2>研究机构</h2>
+                    <hr>
+                    <div class="div-e">
+                    <ul>
+                        <li><a class="c49436" href="http://xcxb.cbpt.cnki.net/WKC/WebPublication/index.aspx?mid=xcxb" onclick="_addDynClicks('wburl',1247363695,4648)" target="_blank">《现代财经》</a></li>
+                        <li><a class="c49436" href="http://rcfi.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4517)" target="_blank">金融与保险研究中心</a></li>
+                        <li><a class="c49436" href="http://tj.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4519)" target="_blank">中国经济统计研究中心</a></li>
+                        <li><a class="c49436" href="http://tafta.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4520)" target="_blank">天津市自由贸易区研究院</a></li>
+                        <li><a class="c49436" href="http://management.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,12958)" target="_blank">工商管理研究中心</a></li>
+                        <li><a class="c49436" href="http://bh.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4482)" target="_blank">中国滨海金融协同创新中心</a></li>
+                    </ul>
+                    </div>
+                    <div class="div-f">
+                    <ul>
+                        <li><a class="c49436" href="http://cxcy.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4516)" target="_blank">创新与创业研究中心</a></li>
+                        <li><a class="c49436" href="http://pub.tjufe.edu.cn/department/fzx/" onclick="_addDynClicks('wburl',1247363695,4518)" target="_blank">法律经济分析与政策评价中心</a></li>
+                        <li><a class="c49436" href="http://public.tjufe.edu.cn/department/jingjiguanli/" onclick="_addDynClicks('wburl',1247363695,4480)" target="_blank">现代经济管理研究院</a></li>
+                        <li><a class="c49436" href="http://ads.tjufe.edu.cn/" onclick="_addDynClicks('wburl',1247363695,4521)" target="_blank">国合天财发展战略研究院</a></li>
+                        <li><a class="c49436" href="http://iccmms.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,4522)" target="_blank">管理可计算建模协同创新中心</a></li>
+                        <li><a class="c49436" href="http://ciae.tjufe.edu.cn" onclick="_addDynClicks('wburl',1247363695,12963)" target="_blank">无形资产评价协同创新中心</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">2014天津财经大学 津icp备05003050号 津教备0017号</div>
+        </footer>
+        <!-- 申请课程模态框 -->
+            <!--<div class="modal fade" id="joinCourse" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">-->
+                <!--<div class="modal-dialog" style="width: 300px; margin-top: 250px;">-->
+                    <!--<div class="modal-content" >-->
+                        <!--<div class="modal-header">-->
+                            <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>-->
+                            <!--<h4 class="modal-title text-danger" id="operationDialogDeleteTital"></h4>-->
+                        <!--</div>-->
+                        <!--<div class="modal-body " style="width: 200px;">-->
+                            <!--<div>-->
+                                <!--<lable>申请已提交,待老师审核！</lable>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="modal-footer">-->
+                            <!--<button type="button" class="btn btn-success" data-dismiss="modal" id="operationDialogDeleteSubmit"><i class="fa fa-print"></i> 确认</button>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!-- 参加课程模态框 -->
+            <div class="modal fade" id="attendCourse" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title text-danger" id="operationDialogDeleteTital"></h4>
+                        </div>
+                        <div class="modal-body " style="width: 300px;">
+                            <div>
+                                <lable>成功添加，请到我的课程查看！</lable>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal" id="operationDialogDeleteSubmit"><i class="fa fa-print"></i> 确认</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog" style="width: 460px; margin-top: 150px;">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-danger" id="operationDialogDeleteTital" style="color:black;font-size:24px;"><b>登录</b></h4>
+                    </div>
+                    <div class="modal-body " style="width: 400px;">
+                        <!-- <div class="loginbox"> -->
+                        <div class="login" >
+
+                            <div class="input-group inputbox ">
+                                <span class="input-group-addon"><i class=" fa fa-user-o"></i></span>
+                                <input  id="form_username" type="text" class="form-control" placeholder="请输入学号" autofocus="autofocus" name="stuId" style="height:44px;">
+                            </div>
+
+                            <div class="input-group inputbox clearfix">
+                                <span class="input-group-addon"><i class=" fa fa-key"></i></span>
+                                <input id="form_password"  type="password" class="form-control " placeholder="请输入密码" autofocus="autofocus" name="password" style="height:44px; z-index:4; text-indent:10px;">
+                                <!--<span class="fa fa-eye-slash"  id="eyesShow" ></span>-->
+                                <sapn class="fa fa-eye " id="eyesHide" style="position:absolute; z-index:9999;" ></sapn>
+                            </div>
+
+
+                            <button type="button" id="loginbtn" class="loginbtn">LOGIN</button>
+                            <div id="errormessage" style="color:#ff0000;margin-left: 33px;"></div>
+
+                        </div>
+                        <!--  </div> -->
+
+                    </div>
+                    <div class="modal-footer">
+                        <a class="forgetpwd" href="../Login/forgetpass.html" target="_blank"><b>忘记密码？</b> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 退出登录 -->
+        <div class="modal fade" id="exit" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-danger" id="operationDialogDeleteTital"></h4>
+                    </div>
+                    <div class="modal-body " style="width: 200px;">
+                        <div>
+                            <lable>确认退出登录？</lable>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="operationDialogDeleteSubmit"><i class="fa fa-print"></i> 确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <include file='Layout:ins_js' />
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var f = false;
+                $("#eyesHide").click(function(){
+                    if(f = !f){
+                        $("#form_password").attr("type", "text");
+                        $("#eyesHide").toggleClass("fa-eye-slash").toggleClass("fa-eye");
+                    }else{
+                        $("#form_password").attr("type", "password");
+                        $("#eyesHide").toggleClass("fa-eye-slash").toggleClass("fa-eye");
+                    }
+                });
+            });
+
+        </script>
+    </body>
+
+</html>

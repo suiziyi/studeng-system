@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>视频学习</title>
+
+         <link rel="stylesheet" href="../../css/browseanno.css" />
+        <link rel="stylesheet" href="../../css/1_1login.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+        <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video-js.min.css" rel="stylesheet">-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.3.0/video.min.js"></script>-->
+         <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+        <script src="../../js/session.js"></script>
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="../../js/learnvideo.js"></script>
+        <style>
+            a {
+                text-decoration: none;
+            }
+
+
+
+            .m-learnbox {
+                padding: 20px 0;
+                margin:20px 100px;
+                background-color: #FFFFFF;
+                height: 650px;
+                zoom: 0;
+            }
+
+
+            .navbar-header.a {
+                color: #101010;
+            }
+
+            .accordion {
+                margin-bottom: 18px;
+            }
+
+            .accordion-group {
+                margin-bottom: 2px;
+                border: 1px solid #e5e5e5;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+            }
+
+            .accordion-heading {
+                border-bottom: 0;
+            }
+
+            .accordion-heading .accordion-toggle {
+                display: block;
+                padding: 8px 15px;
+            }
+
+            .accordion-inner {
+                padding: 9px 15px;
+                border-top: 1px solid #e5e5e5;
+            }
+
+            .panel-body a {
+                margin-left: 1%;
+                display: block;
+                color: black;
+                font-size: 15px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+            }
+
+            .panel-body a:hover {
+                color: red;
+                text-decoration: none;
+            }
+
+            .j-icon {
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+                background: url(../../img/nolearn1.png)no-repeat;
+                display: inline;
+                float: left;
+            }
+
+            .panel-body span {
+                color: #B9B9B9;
+                right: 20px;
+                float: right;
+                margin-top: -35px;
+            }
+
+            .panel-body a {
+                height: 35px;
+            }
+            .gmn-1 ul{
+                display: block;
+                list-style-type: disc;
+                -webkit-margin-before: 1em;
+                -webkit-margin-after: 1em;
+                -webkit-margin-start: 0px;
+                -webkit-margin-end: 0px;
+                -webkit-padding-start: 40px;
+            }
+            .unitslist li {
+                list-style: none;
+                cursor: pointer;
+                text-align: center;
+                font-size: 14px;
+                line-height: 30px;
+            }
+            .unitslist li.current {
+                cursor: default;
+                color: #fff;
+                background-color: #60B900;
+            }
+
+            .f-fl {
+                float: left;
+            }
+            ul.nav.nav-tabs {
+                margin-bottom: -10px;
+            }
+            /*.videoLiColor{*/
+                /*color:#fff;*/
+            /*}*/
+        </style>
+    </head>
+
+    <body>
+
+
+                <div class="g-mn1c m-learnbox" id="courseLearn-inner-box">
+                    <div>
+                        <div class="m-lessonDetail">
+                            <div class="u-learn-moduletitle titleBar f-cb">
+                                <div class="j-breadcb f-fl">
+                                    <ul class="nav nav-tabs ">
+                                        <!--<li class="active"><a href="#">首页</a></li>-->
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    第一章 计算机网络引论 <span class="caret"></span>
+                                                </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">第一章&nbsp;计算机网络引论</a></li>
+                                                <li><a href="#">第二章&nbsp;数据通信基础</a></li>
+                                                <li><a href="#">第三章&nbsp;计算机局域网</a></li>
+                                                <li><a href="#">第四章&nbsp;网络互联及Internet</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                                    1.1 计算机网络的定义和分类 <span class="caret"></span>
+                                                </a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">1.1&nbsp;计算机网络的定义和分类</a></li>
+                                                <li><a href="#">1.2&nbsp;计算机网络的发展</a></li>
+                                                <li><a href="#">1.3&nbsp;OSI参考模型</a></li>
+                                                <li class="divider"></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+
+                                    <div class="video">
+                                        <ul class="unitslist f-cb">
+                                            <li class="f-fl current" title="视频：开课彩蛋:&nbsp;新开始新征程&nbsp;..." data-id="1004783393" style="width:25%;" id="auto-id-1522812647780"><span class="glyphicon glyphicon-play-circle"></span></li>
+                                            <li class="f-fl" title="视频：课程定位与目标" data-id="1004783394" style="width:25%;" id="auto-id-1522812647782"><span class="glyphicon glyphicon-play-circle"></span></li>
+                                            <li class="f-fl" title="视频：课程教学安排" data-id="1004777648" style="width:25%;" id="auto-id-1522812647784"><span class="glyphicon glyphicon-play-circle"></span></li>
+                                            <li class="f-fl" title="视频：课程学习建议" data-id="1004786052" style="width:25%;" id="auto-id-1522812647786"><span class="fa fa-file-text-o"></span></li>
+                                        </ul>
+                                        <div class="videoPpt">
+                                            <video id="videoid" width="820" height="440" controls  value="">
+                                                <source src="movie.mp4"  type="video/mp4">
+                                                <source src="movie.mp3"  type="video/mp3">
+                                                <source src="movie.ogg"  type="video/ogg">
+                                                您的浏览器不支持 HTML5 video 标签。
+                                            </video>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!--<div class="j-askt f-fr" id="auto-id-1522041720624"><a class="u-btn u-btn-default u-btn-sm f-fr">向老师提问</a></div>-->
+                        </div>
+                        <!--<div class="empty j-empty" style="display: none;"><span class="f-ib">老师还没有发布任何学习内容，请耐心等待</span></div>-->
+
+                    </div>
+                </div>
+<div class="input_hidden">
+    <input type="hidden" name="section" value=""/>
+    <input type="hidden" name="chapter" value=""/>
+    <input type="hidden" name="address" value="" src="" data-id=""/>
+    <input type="hidden" name="video" value="1"/>
+
+</div>
+
+
+    </body>
+
+</html>

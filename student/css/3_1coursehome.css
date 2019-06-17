@@ -1,0 +1,183 @@
+/*
+* @Author: name
+* @Date:   2019-02-18 19:17:41
+* @Last Modified by:   name
+* @Last Modified time: 2019-02-19 20:08:28
+*/
+.course-card_closewrap {
+    margin-top: -94px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 0;
+    z-index: 4;
+    /*background-color: #000000;*/
+}
+
+.course-card_close{
+    /*height: 18px;
+    width: 18px;
+    text-align: center;
+    color: #fff;
+    background: url(../img/close.png) no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: 3px;
+    background-size: 13px;
+    */
+
+    height: 22px;
+    width: 22px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background: url(../img/close.png) no-repeat;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-position: 3px;
+    background-size: 13px;
+
+
+}
+.course-card_close:hover {
+    background-color: #fd7531;
+}
+.course-card_closewrap:hover.f-dn{
+    display:block ;
+}
+.headwrap .header_txt2{
+    float:right;
+    background-color:#fdf701;
+    border-radius:100px;
+    width:250px;
+    height: 40px;
+    margin-right: -930px;
+
+}
+.headwrap .header_txt2 h1{
+    font-size:20px;
+    text-align:center;
+    margin:9px 0 3px 0;
+}
+/*
+.f-dn {
+    display: none;
+}*/
+
+.course-card_title {
+    font-size: 17px;
+    margin: 20px 10px 15px;
+    color: #3a4348;
+    height: 48px;
+    line-height: 24px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card_btn{
+    margin-top: 40px;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+ .navbar-header {
+    margin-left: 60px;
+ }
+
+.navbar-brand {
+    font-size: 20px;
+}
+
+.myclass-list_ul {
+    margin-left: 140px;
+    list-style-type: none;
+    margin-top: 30px;
+}
+.myclass-list_itm{
+
+    height: 225px;
+    width: 223px;
+    display: inline-block;
+    margin-right: 22px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    float: left;
+}
+.uc-course-card {
+    width: 225px;
+    height: 210px;
+    background-color: #FFFFFF;
+    /*border-radius: 10px;*/
+}
+
+.myclass_img {
+    /*border-radius: 10px;*/
+    width: 225px;
+    height: 94px;
+    position: relative;
+
+}
+
+.myclass_button {
+    border-radius: 15px;
+    width: 130px;
+    height: 35px;
+    color: #337ab7;
+    background-color: white;
+    border: 2px solid #337ab7;
+    border-radius:20px;
+    transition-duration: 0.4s;
+    margin: auto;
+
+}
+
+.myclass_button:hover {
+    background-color: #337ab7;
+    /* Green */
+    border-radius:20px;
+    color: white;
+}
+
+.uc-course-card-p {
+    margin-top: -20%;
+    margin-left: 50%;
+    position: relative;
+    left: -68px;
+
+}
+#li-font{
+
+    font-size: 16px;
+    text-align: center;
+    color: #555555;
+}
+.navbar-header>a{
+    color: rgb(51, 51, 51);
+    font-family: 微软雅黑, "Microsoft YaHei";
+}
+.navbar-header>a:hover{
+    color: #008080;
+    font-family: 微软雅黑, "Microsoft YaHei";
+}
+.current{
+    border-bottom: 4px solid #008080;
+}
+/*.pagination {*/
+    /*display: inline-block;*/
+    /*padding-left: 0;*/
+    /*margin: 20px 0;*/
+    /*border-radius: 4px;*/
+    /*float:right;*/
+    /*background-color: #f6f6f6;*/
+/*}*/
+/*.pagination li:hover{*/
+    /*color: #fff;*/
+    /*cursor: default;*/
+    /*background-color: #337ab7;*/
+    /*border-color: #337ab7;*/
+/*}*/
+/*.pagination .active{*/
+    /*color: #fff;*/
+    /*background-color: #337ab7;*/
+    /*border-color: #337ab7;*/
+/*}*/

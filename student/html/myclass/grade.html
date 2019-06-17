@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>成绩</title>
+
+        <include file='Layout:ins_js' />
+        <include file='Layout:ins_css' />
+        <link rel="stylesheet" href="../../css/browseanno.css" />
+    <link rel="stylesheet" href="../../css/1_1login.css">
+
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+         <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+        <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+        <script src="../../js/session.js"></script>
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="../../js/grade.js"></script>
+        <style>
+             .left-mn {
+                float: left;
+                width: 100%;
+            }
+
+            .left-mnc {
+                margin-right: 270px;
+                zoom: 0;
+                border-style: none;
+            }
+
+            .prog{
+                  height: 50px;
+                 padding: 8px 20px;
+                background: #FFFFFF;
+                margin-bottom: 10px;
+                margin-top: 15px;
+                margin-left:-20px;
+                outline: none;
+            }
+
+            .prog .cnt {
+                float: left;
+                max-width: 500px;
+                height: 40px;
+            }
+
+            .cnt>h3{
+                font-size: 4px;
+            }
+            .table-striped td{
+                text-indent:20px;
+            }
+
+
+
+            .tit {
+                font-size: 19px;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 32%;
+            }
+            .navbar-header.a{
+                color: #101010;
+            }
+
+        </style>
+    </head>
+    <body>
+
+                        <div class="left-mn">
+                            <div class="left-mnc">
+                                <div class="prog">
+                                    <div>
+                                        <div class="cnt">
+                                            <h1 style="color: red;font-size: 25px;"><b>成绩查询</b></h1>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <hr style="margin-bottom: 30px; "/>
+                            <div class="div_grade"></div>
+                            <!--<div>-->
+                                <!--<h4 style="color:red;font-size: 18px;text-align: left; ">综合总成绩</h4>-->
+
+                                <!--<h4 style="color:black;font-size: 15px;margin-top: 15px;">&nbsp;&nbsp;85&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;优秀</h4>-->
+
+                            <!--</div>-->
+                            <!--<hr style="margin-bottom: 30px; "/>-->
+                            <!--<div>-->
+                                <!--<table class="table table-striped" >-->
+                                    <!--<thead>-->
+                                        <!--<tr>-->
+                                            <!--<th>课下作业</th>-->
+                                            <!--<th>单元测试</th>-->
+                                            <!--<th>课下练习</th>-->
+                                            <!--<th>课堂活跃</th>-->
+                                            <!--<th>期中考试</th>-->
+                                            <!--<th>期末考试</th>-->
+                                            <!--<th>综合成绩</th>-->
+                                        <!--</tr>-->
+                                    <!--</thead>-->
+                                    <!--<tbody>-->
+                                        <!--<tr>-->
+                                            <!--<td>86</td>-->
+                                            <!--<td>80</td>-->
+                                            <!--<td>92</td>-->
+                                            <!--<td>90</td>-->
+                                            <!--<td>85</td>-->
+                                            <!--<td>80</td>-->
+                                            <!--<td style="color: #E31818;">86</td>-->
+                                        <!--</tr>-->
+                                    <!--</tbody>-->
+                                <!--</table>-->
+
+                            <!--</div>-->
+                           <!--&lt;!&ndash;<hr style="margin-bottom: 40px; dotted"/>&ndash;&gt;-->
+
+                            <!--<div class="cnt" style="margin-top:70px ;">-->
+                                <!--<h1 style="color: red;font-size: 25px;"><b>评分标准</b></h1>-->
+                            <!--</div>-->
+                            <!--<hr style="margin-bottom: 30px; "/>-->
+                               <!--<p style="margins-bottom: 50px;">本课程的成绩由课下作业、单元测验、期中考试、期末考试四部分组成。其中课下作业占20%，单元测验占30%，期中考试占20%，期末考试占30%。采用百分制计分，60分以下为“不及格”，60分及以上为“及格”，85分及以上为“优秀”。-->
+                               <!--</p>-->
+                            <!--<hr style="margin-top: 80px; "/>-->
+                        </div>
+
+
+
+<script>
+
+$(function(){
+ $(".title1 .title2 .title3", parent.document).hide();
+});
+</script>
+    </body>
+</html>

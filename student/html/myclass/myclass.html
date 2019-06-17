@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的学习</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+       <link rel="stylesheet" href="../../css/browseanno.css" />
+    <link rel="stylesheet" href="../../css/1_1login.css">
+
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ext-language_tools.js" type="text/javascript" charset="utf-8"></script>-->
+
+        <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+        <script src="../../js/session.js"></script>
+       <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="../../js/myclass.js"></script>
+        <style>
+            .g-wrap{
+                height: 680px;
+                width: 100%;
+                background-color: #e8e6e8;
+            }
+            .g-sd1{
+                position: relative;
+                float: left;
+                width: 225px;
+                margin-right: -225px;
+            }
+            .m-notice{
+                width:1060px;
+                /* margin-top:-20px; */
+            }
+            .m-learnleft{
+                padding: 20px 0;
+            }
+            .f-pr{
+                padding-left: 10px;
+                position: relative;
+            }
+            .g-mn1 {
+                float: right;
+                width: 100%;
+            }
+            .m-learnbox {
+                padding: 0 40px;
+                margin-left: 245px;
+                background-color: #FFFFFF;
+                min-height: 650px;
+                overflow: hidden;
+                zoom: 0;
+            }
+            .tab .active1 a{
+                    background-color:#347ab6;
+                    text-decoration:none;
+                     color: #eee;
+
+            }
+            #demo2 .active1 a{
+                    background-color:#347ab6;
+                    text-decoration:none;
+                     color: #eee;
+
+            }
+            .tab li:hover{
+                text-decoration:none;
+            }
+            .tab li:after{
+                text-decoration:none;
+            }
+            #demo2 li:after{
+                text-decoration:none;
+            }
+            iframe{
+                overflow-y:scroll;
+            }
+            .left_title{
+                left:100px;
+            }
+        </style>
+    </head>
+    <body style="background-color: #e8e6e8;" >
+        <div  class="header-lea"  style="height:80px "><!--
+                        <img src="../img/header.jpg"  width="100%" height="100%"/>-->
+
+            <!--
+                        <img src="../img/header.jpg"  width="100%" height="100%"/>-->
+            <div class="title">
+
+                <div class="logo">&nbsp;天津财经大学</div>
+                <img src="../../img/logo.png" style="width: 40px;height: 40px;"/>
+            </div>
+            <div class="header-search">
+                <input type="text" name="datasearch" autocomplete="off" class="data-search font12" id="data-search" placeholder="搜索更多优质课程" role="combobox">
+            </div>
+            <a href="##"><button class="search-btn"></button></a>
+            <div class="nav" >
+                <ul>
+                    <li><a href="../Home/homepage.html">首页</a></li>
+                    <li class="exit_join"><a href="#">退出登录</a></li>
+
+                </ul>
+            </div>
+
+            <div class="head dropdown">
+                <a class="img dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="900" data-close-others="false">
+                    <img src="../../img/user.jpg" />
+                </a>
+
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1"  href="../CourseInfo/coursehome.html">我的学习</a></li>
+                <li style="padding-top:20px ;"><a tabindex="-1"  href="../Login/userinfo.html">个人设置</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="title1" style="height:60px ;background-color: #f5f0f5;">
+                <div style="width: 260px;height: 60px;float: left;">
+                <div class="classname" style="margin-top: 8%;margin-left: 10%; font-size: 18px;">面向对象程序设计 - C++</div>
+                </div>
+            <div class="title2" style="width: 260px;height: 60px;float: right;">
+                <div class="title3" style="margin-top: 8%;margin-left: 94px; font-size: 18px;">热门课程</div>
+            </div>
+        </div>
+        <div class="g-wrap">
+            <div class="g-sd1">
+                <div class="m-learnleft">
+                    <div class="f-pr">
+                        <img src="../../img/lesson2.png" width="225px" height="130px" style="border-radius: 10px;" />
+
+                    </div>
+                       <ul  class="tab u-tabul" >
+                            <li class="u-bluetab f0 ">
+                            <a href="browseanno.html" target="testIframe1">公告</a></li>
+                            <li class="u-bluetab f0">
+                                <a href="courseware.html" target="testIframe1">课件</a>
+                            </li>
+
+                            <li class="u-bluetab f0" >
+                                <a href="../exercise/exercise.html" target="testIframe1">练习</a>
+                            </li>
+
+                            <li class="u-bluetab f0" >
+                                <a href="../homework/homework.html" target="testIframe1">测验与作业</a>
+                            </li>
+                            <li class="u-bluetab f0">
+                                <a href="../Examination/examination.html" target="testIframe1">考试</a>
+                            </li>
+                            <li class="u-bluetab f0" >
+                                <a href="grade.html" target="testIframe1">成绩查询</a>
+                            </li>
+                            <li id="exercise2" class="u-bluetab" >
+                                    <a  data-toggle="collapse" data-target="#demo2">讨论区
+                                    <i class="fa fa-caret-right"></i></a>
+                            </li>
+                                <ul id="demo2" class="collapse" style="width:220px;text-align:center;">
+                                    <li class="u-bluetab f1" style="text-align:center;text-indent:-10px;">
+                                        <a href="../myclass/4_6_1TeacherAnswer.html" target="testIframe1">老师答疑区</a>
+                                    </li>
+                                    <li class="u-bluetab f1"  style="text-align:center;text-indent:-10px;">
+                                        <a href="../myclass/4_6_2ClassExchange.html" target="testIframe1">课堂交流区</a>
+                                    </li>
+                                    <li class="u-bluetab f1"  style="text-align:center;text-indent:-10px;">
+                                        <a href="../myclass/4_6_3FullDiscuss.html" target="testIframe1">综合讨论区</a>
+                                    </li>
+                                </ul>
+
+
+                        </ul>
+                </div>
+            </div>
+            <div class="g-mn1">
+                <div class="m-learnbox">
+                    <div class="m-notice" >
+
+                   <iframe  id="testIframe1" name="testIframe1" frameborder="0" scrolling="no" width="100%" src="browseanno.html" ></iframe>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="div_hidden">
+            <input type="hidden" name="teachingClassId" value=""/>
+            <input type="hidden" name="paperId" value=""/>
+            <input type="hidden" name="sectionName" value=""/>
+            <input type="hidden" name="chapterName" value=""/>
+            <input type="hidden" name="chapterId" value=""/>
+
+        </div>
+        <!-- 退出登录 -->
+        <div class="modal fade" id="exit" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-danger" id="operationDialogDeleteTital"></h4>
+                    </div>
+                    <div class="modal-body " style="width: 200px;">
+                        <div>
+                            <lable>确认退出登录？</lable>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="operationDialogDeleteSubmit"><i class="fa fa-print"></i> 确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+
+            $(function(){
+
+                $('.exit_join').on('click',function(){
+                             $('#exit').modal();
+            });
+
+            $("#exercise2").click(function() {
+
+              $(this).find("i").toggleClass("fa-caret-right").toggleClass("fa-caret-down");
+
+
+            })
+
+            $(".f0").on('click',function(){
+                var index = $(this).index();
+                // console.log($(this).find('a').text());
+                $.session.set('active',index);
+                $(this).addClass('active1');
+                $(this).siblings('li').removeClass('active1');
+                // $('#demo2 li').removeClass("active1");
+                $(".f1").removeClass('active1');
+
+            });
+            $(".f1").on('click',function(){
+                var index = $(this).index();
+                $.session.set('active2',index);
+                $(this).addClass('active1');
+                $(this).siblings('li').removeClass('active1');
+               $(".f0").removeClass('active1');
+            });
+            if ($.session.get('active') != null) {
+                var index = parseInt($.session.get('active'));
+                var li = $(".f0").eq(index);
+                li.addClass('active1');
+                // $('#demo2 li').removeClass("active1");
+                $(".f1").removeClass('active1');
+               $('#testIframe1').attr('src',li.find('a').attr('href'));
+                $.session.remove('active');
+            }
+            else{
+                var li = $(".tab li").eq(0);
+                li.addClass('active1');
+            }
+            if($.session.get('active2') != null){
+                var index = parseInt($.session.get('active2'));
+                var li = $(".f1").eq(index);
+                li.addClass('active1');
+                $(".f0").removeClass('active1');
+                $('#testIframe1').attr('src',li.find('a').attr('href'));
+                $('#exercise2').find('i').toggleClass("fa-caret-down").toggleClass("fa-caret-right");
+                $.session.remove('active2');
+                li.parents('#demo2').addClass('in');
+            }
+
+        })
+            function reinitIframe(){
+                var iframe = document.getElementById("testIframe1");
+                try{
+                    var bHeight = iframe.contentWindow.document.body.scrollHeight;
+                    var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+                    var height = Math.max(bHeight, dHeight);
+                    iframe.height = height;
+                    // console.log(height);
+                }catch (ex){}
+            }
+            window.setInterval("reinitIframe()", 200);
+
+         </script>
+
+    </body>
+</html>

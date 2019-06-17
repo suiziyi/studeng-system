@@ -1,0 +1,142 @@
+
+@charset "utf-8";
+
+body,button, input, select, textarea,h1 ,h2, h3, h4, h5, h6 ,li,a{
+    font-family: "Microsoft YaHei","宋体", "Tahoma", "Helvetica", Arial, "\5b8b\4f53", "sans-serif";
+}
+body,h1,ul,h2,div,input,li{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;
+}
+ul{
+    list-style:  none;
+}
+a{
+    text-decoration: none;
+}
+#contain{
+    heigth:100%;
+}
+.none{
+    display: none;
+}
+.container .row .image{
+    margin-top:40px;
+}
+.container .row .image img{
+    width: 490px;
+    height:250px;
+    margin-left:110px;
+}
+.container .title{
+    width:400px;
+    height:400px;
+    float:right;
+    position:absolute;
+     /*bottom:64px;*/
+     bottom:113px;
+    /*bottom:48px; */
+    right:200px;
+}
+.container .row .title h1{
+    font-size: 26px;
+    line-height:50px;
+    height:50px;
+    letter-spacing:2px;
+}
+.container .row .title .time{
+    width:400px;
+    height:120px;
+    background-color: #e8e6e8;
+    color:#393228;
+    margin-top:20px;
+}
+.container .row .title .time span{
+    color: #00CD00;
+}
+.container .row .title .time ul{
+   padding-top:15px;
+   padding-left:15px;
+}
+.container .row .title li{
+    width:200px;
+    height:30px;
+    line-height:30px;
+    text-indent:2px;
+
+}
+.container .row .title .btn{
+    margin-top:18px;
+    width:220px;
+    height:50px;
+    font-size:20px;
+    color: #fff;
+}
+.container .row .title .btn:hover{
+    opacity: 0.5;
+    cursor:pointer;
+}
+
+
+.container .about{
+
+    font-style: 18px;
+    background-color: #f5f0f5;
+    margin-top:40px;
+}
+
+.container .about h1{
+    line-height: 80px;
+    height: 60px;
+    border-bottom: 1px dashed #999;
+    padding: 0 0 15px 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+.container .about p{
+
+    text-indent: 40px;
+    font-size: 18px;
+
+    line-height: 1.5;
+    margin:10px 0;
+    margin-bottom:50px;
+
+}
+.container .about section{
+    margin:0 100px;
+
+}
+.container .class h1{
+
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px dashed #999;
+    padding: 0 0 15px 0;
+    font-size: 22px;
+    font-weight: normal;
+}
+.container .class{
+      min-height:1000px;
+}
+.container .class .sec{
+    width:100%;
+    min-height:200px;
+
+}
+.container .class .sec h2{
+    margin-top:15px;
+    heigth:30px;
+    line-height:30px;
+    font-size:18px;
+}
+.container .class .sec li{
+    color:#9a9a9a;
+    height:30px;
+    line-height:30px;
+    font-size:16px;
+
+}

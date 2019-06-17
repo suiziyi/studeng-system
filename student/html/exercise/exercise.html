@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>练习</title>
+        <link rel="stylesheet" href="../../css/zTreeStyle.css" type="text/css">
+         <link rel="stylesheet" href="../../css/browseanno.css" />
+        <link rel="stylesheet" href="../../css/1_1login.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+         <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+        <script type="text/javascript" src="../../js/jquery.ztree.core.js"></script>
+        <script src="../../js/session.js"></script>
+        <script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+        <script src="../../js/exercise.js"></script>
+        <style>
+
+            .left-mn {
+                float: left;
+                width: 100%;
+            }
+
+            .prog{
+                  height: 50px;
+                padding: 8px 20px;
+                background: #FFFFFF;
+                margin-bottom: 10px;
+                margin-top: 15px;
+                margin-left:-20px;
+                outline: none;
+            }
+            .prog .cnt {
+                float: left;
+                max-width: 500px;
+                height: 40px;
+            }
+
+            li{
+                list-style: none;
+            }
+
+            textarea{
+                width: 360px;
+                height: 30px;
+                color: black;
+                font-size: 18px;
+                background: #fafafa;;
+                border: gray solid 1px;
+                margin: 10px 35px;
+                overflow-y: visible;
+            }
+
+        </style>
+    </head>
+    <body >
+
+                        <div class="left-mn">
+                                <div class="prog">
+                                    <div>
+                                        <div class="cnt">
+                                            <h1 style="color: red;font-size: 25px;"><b>练习</b></h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <hr style="margin-bottom: 30px;"/>
+                            <table border=0 height=1000px align=left>
+                                <tr>
+                                    <td width=160px align=left valign=top style="">
+                                        <ul id="tree" class="ztree" style="width:160px; height:400px; overflow-y:scroll; margin-left:0px;border: #D4D4D4 1px solid; "></ul>
+                                    </td>
+                                    <td width=870px align=left valign=top><iframe id="testIframe" name="testIframe" scrolling="auto" frameborder="0"  width="100%"  src="exe.html" onload="this.height=100">
+
+                                    </iframe></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                        <div class="input_hidden"></div>
+                        <div class="div_hidden">
+                            <input type="hidden" name="teachingClassId" name=""/>
+                            <input type="hidden" name="exeId" name=""/>
+                            <input type="hidden" name="titleid" name=""/>
+                        </div>
+    <script>
+        function reinitIframe(){
+            var iframe = document.getElementById("testIframe");
+            try{
+                var bHeight = iframe.contentWindow.document.body.scrollHeight;
+                var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+                var height = Math.max(bHeight, dHeight);
+                iframe.height = height;
+                // console.log(height);
+            }catch (ex){}
+        }
+        window.setInterval("reinitIframe()", 200);
+    </script>
+    </body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>综合讨论</title>
+
+        <link rel="stylesheet" href="../../css/browseanno.css" />
+        <link rel="stylesheet" href="../../css/1_1login.css">
+        <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+         <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+
+        <style>
+            .left-mn {
+                float: left;
+                width: 100%;
+            }
+
+            .left-mnc {
+                margin-right: 270px;
+                zoom: 0;
+                border-style: none;
+            }
+
+            .prog{
+                  height: 50px;
+                 padding: 25px 20px 0 20px;
+                background: #FFFFFF;
+                margin-bottom: 10px;
+                margin-top: 15px;
+                margin-left:-20px;
+                outline: none;
+            }
+
+            .prog .cnt {
+                float: left;
+                max-width: 500px;
+                height: 40px;
+            }
+            .prog1{
+                height: 220px;
+                padding: 8px 20px;
+                background: #FFFFFF;
+                margin-bottom: 10px;
+                margin-top: 15px;
+                outline: none;
+            }
+            .cnt>h3{
+                font-size: 4px;
+            }
+            .u-btn{
+                margin-top: 25px;
+                float: right;
+                border-radius: 6px;
+                width: 150px;
+                height: 40px;
+                color: white;
+                background-color: #FF6C00;
+                border:2px solid #EF6502;
+                transition-duration: 0.4s;
+            }
+            .u-btn:hover {
+                background-color: #FF7E00; /* Green */
+                color: white;
+            }
+            .m-notice .right-sd {
+                position: relative;
+                float: right;
+                width: 240px;
+                margin-left: -240px;
+                height: 400px;
+            }
+            .m-dynamic {
+                width: 240px;
+                height:400px;
+                margin-top: 15px;
+            }
+            .m-notice .m-will{
+                height:400px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                background-color: #f8f8f8;
+            }
+            .tit {
+                font-size: 19px;
+                height: 40px;
+                line-height: 40px;
+                padding-left: 32%;
+            }
+            .navbar-header.a{
+
+            }
+        </style>
+
+    </head>
+    <body>
+
+
+                        <div class="left-mn">
+
+                            <div class="left-mnc">
+                                <div class="prog">
+                                <div class="cnt">
+                                    <h2 style="color: red;font-size: 25px;"><b>讨论区 > 综合讨论区</b></h2>
+                                </div>
+
+                                </div>
+                            </div>
+                            <hr />
+                            <span style="font-size: 10px;">
+                                    发表任何想与大家分享的经验和想法！关于本课程、学习、工作、生活等一般行话题。
+                            </span>
+
+                            <br /><br /><br />
+
+                            <div class="btn-group" type="button">
+                                <button id="sendTitle" style="" class="btn btn-info ">发起主题</button>
+                            </div>
+
+                            <br /><br /><br />
+
+                            <form role="form">
+                                <div class="form-group" style="width:30%">
+                                    <label for="name">全部主题</label>
+                                    <select class="form-control" id="name">
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                    </select>
+
+                                </div>
+                            </form>
+
+
+
+
+
+
+                        </div>
+
+            <div class="modal fade" id="exit" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title text-danger" id="operationDialogDeleteTital"></h4>
+                        </div>
+                        <div class="modal-body " style="width: 200px;">
+                            <div>
+                                <lable>确认退出登录？</lable>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal" id="operationDialogDeleteSubmit"><i class="fa fa-print"></i> 确认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<script>
+
+$(function(){
+
+ $(".title1 .title2 .title3", parent.document).hide();
+
+});
+</script>
+
+
+    </body>
+</html>

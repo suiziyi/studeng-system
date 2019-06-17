@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>我的学习</title>
+
+
+        <link rel="stylesheet" type="text/css" href="../../css/3_1coursehome.css"/>
+        <link rel="stylesheet" href="../../css/ins_header.css" />
+         <link rel="stylesheet" href="../../css/1_1login.css">
+         <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="../../css/font-awesome/css/font-awesome.min.css">
+        <script src="https://cdn.bootcss.com/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery-cookie/1.0/jquery.cookie.min.js"></script>
+        <script src="../../js/session.js"></script>
+        <script src="../../js/coursehome.js"></script>
+
+        <style>
+            .page {
+                margin-top: 45px;
+                float:right;
+                margin-right:10%;
+                height: 60px;
+                line-height: 60px;
+                background-color: #e8e6e9;
+                padding-bottom: 90px;
+            }
+
+            .pagination>li>a:hover{
+                 background-color: #337ab7;
+                color: #fff;
+                cursor: pointer;
+                border-color: #337ab7;
+            }
+
+            .pagination .active{
+                color: #fff;
+                background-color: #337ab7;
+                border-color: #337ab7;
+            }
+            .left_title{
+                left:100px;
+            }
+            .clearfix{
+               clear:both;
+            }
+        </style>
+    </head>
+
+    <body style="background-color:#e8e6e9;">
+        <!--
+
+                    描述：header栏
+               -->
+<!--         <link rel="import" href="__ROOT__/Application/Home/View/Header/ins_header.html" > -->
+
+
+            <!-- <script>
+                  $("#page1").load("__ROOT__/Application/Home/View/Header/ins_header.html");
+            </script> -->
+
+        <!--
+                    描述：主体内容部分
+                -->
+ <!--        <div  class="header-lea"  style="height:80px ">
+                        <div class="title" >
+
+                            <div class="logo">&nbsp;天津财经大学</div>
+
+                        </div>
+                        <div class="header-search">
+                            <input type="text" name="datasearch" autocomplete="off" class="data-search font12" id="data-search" placeholder="搜索你感兴趣的课程"  role="combobox">
+                        </div>
+                        <button class="search-btn"></button>
+                        <div class="head">
+                            <h1 class="headname" style="color: #FFFFFF;">
+                                -/*boulevard of dreams
+                            </h1>
+                            <a>
+                                <img src="../img/user.jpg"/>
+                            </a>
+                        </div>
+
+        </div> -->
+        <div class="header-lea" style="height:80px ">
+            <!--
+                        <img src="../img/header.jpg"  width="100%" height="100%"/>-->
+            <div class="title">
+
+                <div class="logo">&nbsp;天津财经大学</div>
+                <img src="../../img/logo.png" style="width: 40px;height: 40px;"/>
+            </div>
+
+            <div class="header-search">
+                <input type="text" name="datasearch" autocomplete="off" class="data-search font12" id="data-search" placeholder="搜索更多优质课程" role="combobox">
+            </div>
+            <a href="##"><button class="search-btn"></button></a>
+            <div class="nav">
+                <ul>
+                    <li ><a href="../Home/homepage.html">首页</a></li>
+                    <li class="exit_join"><a href="#">退出登录</a></li>
+
+                </ul>
+            </div>
+
+            <div class="head dropdown">
+                <a class="img dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="900" data-close-others="false">
+                    <img src="../../img/user.jpg" />
+                </a>
+
+            <ul class="dropdown-menu">
+                <li><a tabindex="-1"  href="../CourseInfo/coursehome.html">我的学习</a></li>
+                <li style="padding-top:20px ;"><a tabindex="-1"  href="../Login/userinfo.html">个人设置</a></li>
+            </ul>
+            </div>
+
+        </div>
+
+                <!--
+
+                    描述：header下欢迎框
+                -->
+                <div  class="headwrap">
+                    <div id="header_wrap">
+                        <a class="header_logo">
+                            <img src="../../img/user.jpg" alt="头像"/>
+                        </a>
+                        <div class="header_txt">
+                            <h1 class="header_name">
+                                您好，欢迎进入课程！
+
+                            </h1>
+                            <p class="header_info">知识越多越令人陶醉</p>
+                        </div>
+                    </div>
+                </div>
+
+<div>
+
+                    <ul id="myTab"  class="nav nav-tabs" style="height:41px ;width: 1100px;margin-left:140px;background-color:#FFFFFF ; font-size:15px;">
+                        <li class="active">
+                            <a href="#start" data-toggle="tab">&nbsp;&nbsp;&nbsp;全部&nbsp;&nbsp;&nbsp;</a>
+                        </li>
+                        <li><a href="#will_start" data-toggle="tab">&nbsp;&nbsp;&nbsp;即将开始&nbsp;&nbsp;&nbsp;</a></li>
+
+                        <li><a href="#doing" data-toggle="tab">&nbsp;&nbsp;&nbsp;正在进行&nbsp;&nbsp;&nbsp;</a></li>
+                         <li><a href="#finish" data-toggle="tab">&nbsp;&nbsp;&nbsp;已经结束&nbsp;&nbsp;&nbsp;</a></li>
+                     </ul>
+
+                <div id="myTabContent" class="tab-content">
+                    <div class="tab-pane fade in active" id="start">
+                         <div class="myclass-list ">
+                            <ul class="myclass-list_ul">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="will_start">
+                         <div class="myclass-list ">
+                    <ul class="myclass-list_ul">
+                    </ul>
+
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="doing">
+                         <div class="myclass-list ">
+                    <ul class="myclass-list_ul">
+                    </ul>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="finish">
+                        <div class="myclass-list ">
+                            <ul class="myclass-list_ul">
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+
+</div>
+
+                <div class="div_hidden">
+                    <input type="hidden" name="teachingClassId" value=""/>;
+                </div>
+            <!--
+
+                    描述：bottom
+                -->
+        <div class="clearfix"></div>
+        <div class="page" data-action="翻页点击" >
+
+            <ul class="pagination" >
+                <li><a href="javascript::">&laquo;</a></li>
+                <li class="active"><a href="javascript::">1</a></li>
+                <li><a href="javascript::">2</a></li>
+                <li><a href="javascript::">3</a></li>
+                <li><a href="javascript::">4</a></li>
+                <li><a href="javascript::">5</a></li>
+                <li><a href="javascript::">&raquo;</a></li>
+            </ul>
+        </div>
+            <!-- 模态框 删除start 常颖-->
+            <div class="modal fade" id="deleteCourse" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title text-danger" id="operationDialogue"></h4>
+                        </div>
+                        <div class="modal-body " style="width: 200px;">
+                            <div>
+                                <lable>确认注销此课程？</lable>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal" id="sureDdelete"><i class="fa fa-print"></i> 确认</button>
+                            <button type="button" class="btn btn-danger" data-dismiss="modal" id=""><i class="fa fa-times"></i> 取消</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- jinggao 删除start 常颖-->
+            <div class="modal fade" id="deleteAlert" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+                <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                    <div class="modal-content" >
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title text-danger" id="operationDiagnosable"></h4>
+                        </div>
+                        <div class="modal-body " style="width: 200px;">
+                            <div>
+                                <lable>你不能注销此课程！</lable>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal" id="nodelete"><i class="fa fa-print"></i> 确认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- 退出登录 -->
+        <div class="modal fade" id="exit" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+            <div class="modal-dialog" style="width: 300px; margin-top: 250px;">
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title text-danger" id="operationDialogDeleteTital"></h4>
+                    </div>
+                    <div class="modal-body " style="width: 200px;">
+                        <div>
+                            <lable>确认退出登录？</lable>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-dismiss="modal" id="operationDialogDeleteSubmit"><i class="fa fa-print"></i> 确认</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <include file='Layout:ins_js' />
+        <script>
+            $(function () {
+                $('#myTab li:eq(1) a').tab('show');
+            });
+        </script>
+        <script type="text/javascript">
+
+            $(document).ready(function(){
+
+            $('#start_study').click(function(){
+
+                window.open('../myclass/browseanno.html','_blank')
+
+            });
+
+
+            $("uc-course-card").hover(function(){
+                $("f-dn").css("display","block");
+
+            });
+            // current 自定义css，添加css样式，点击判断是否有下横线
+            $('#choose div').click(function() {
+            if ($(this).hasClass('current')) {
+                return true;
+            } else {
+                $('#choose div').removeClass('current');
+                $(this).addClass('current');
+            }
+            });
+
+            });
+            var f = false;
+            $("#eyesHide").click(function() {
+                if (f = !f) {
+                    $("#form_password").attr("type", "text");
+                    $("#eyesHide").toggleClass("fa-eye-slash").toggleClass("fa-eye");
+                } else {
+                    $("#form_password").attr("type", "password");
+                    $("#eyesHide").toggleClass("fa-eye-slash").toggleClass("fa-eye");
+                }
+
+            })
+        </script>
+    </body>
+
+</html>
